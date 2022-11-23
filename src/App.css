@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.answers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.answers {
+  margin: 3rem;
+}
+
+.answer-button {
+  background-color: aliceblue;
+  width: 20rem;
+  height: 10rem;
+}
+
+.answers-container :hover {
+  background-color: #ffbd35;
+}
+
+.answer-text {
+  color: darkblue;
+  font-size: 2rem;
+}
