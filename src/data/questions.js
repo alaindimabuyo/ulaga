@@ -3,11 +3,56 @@ export const mainMenu = [
     id: 0,
     category: "Visualize Numbers",
     questions: [
-      { id: 0, question: "Question 1", answers: [] },
-      { id: 1, question: "Question 2", answers: [] },
-      { id: 2, question: "Question 3", answers: [] },
-      { id: 3, question: "Question 4", answers: [] },
-      { id: 4, question: "Question 5", answers: [] },
+      {
+        id: 0,
+        question: "Question 1",
+        answers: [
+          { answer: "A", correct: false },
+          { answer: "B", correct: false },
+          { answer: "C", correct: false },
+          { answer: "D", correct: false },
+        ],
+      },
+      {
+        id: 1,
+        question: "Question 2",
+        answers: [
+          { answer: "A", correct: false },
+          { answer: "B", correct: false },
+          { answer: "C", correct: false },
+          { answer: "D", correct: false },
+        ],
+      },
+      {
+        id: 2,
+        question: "Question 3",
+        answers: [
+          { answer: "A", correct: false },
+          { answer: "B", correct: false },
+          { answer: "C", correct: false },
+          { answer: "D", correct: false },
+        ],
+      },
+      {
+        id: 3,
+        question: "Question 4",
+        answers: [
+          { answer: "A", correct: false },
+          { answer: "B", correct: false },
+          { answer: "C", correct: false },
+          { answer: "D", correct: false },
+        ],
+      },
+      {
+        id: 4,
+        question: "Question 5",
+        answers: [
+          { answer: "A", correct: false },
+          { answer: "B", correct: false },
+          { answer: "C", correct: false },
+          { answer: "D", correct: false },
+        ],
+      },
     ],
   },
   {

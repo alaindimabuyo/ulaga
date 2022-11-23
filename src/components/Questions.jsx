@@ -19,17 +19,28 @@ const Questions = () => {
   };
   console.log("COUNTER", count, pageID);
   return (
-    <>
-      {mainMenu[pageID].questions[count].question}
-
-      <button onClick={() => setNextQuestion()}>Submit</button>
-
+    <div className="question-container">
+      <div className="header">
+        <h3>{mainMenu[pageID].questions[count].question}</h3>
+      </div>
+      <div className="answers-container">
+        {mainMenu[pageID].questions[count].answers.map((answer) => (
+          <div className="answers">
+            <button className="answer-button" onClick={() => {}}>
+              <h3 className="answer-text">{answer.answer}</h3>
+            </button>
+          </div>
+        ))}
+      </div>
+      <div>
+        <button onClick={() => setNextQuestion()}>Submit</button>
+      </div>
       {/* {count === 5 && (
         <Link to={`/`}>
           <p>Back to Categories</p>{" "}
         </Link>
       )} */}
-    </>
+    </div>
   );
 };
 
