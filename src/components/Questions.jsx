@@ -20,6 +20,13 @@ const Questions = () => {
   console.log("COUNTER", count, pageID);
   return (
     <div className="question-container">
+      <div className="image">
+        <img
+          src={mainMenu[pageID].questions[count].image}
+          alt="Logo"
+          width={550}
+        />
+      </div>
       <div className="header">
         <h3>{mainMenu[pageID].questions[count].question}</h3>
       </div>
