@@ -4,6 +4,13 @@ import imagethree from "../assets/image3.png";
 import imagefour from "../assets/image4.png";
 import imagefive from "../assets/image5.png";
 
+import ones from "../assets/ones.png";
+import numbers from "../assets/numbers.png";
+import greaterless from "../assets/greaterless.png";
+import numbersforkids from "../assets/numberskids.png";
+import groupofstudents from "../assets/groupofstudents.png";
+import mangoes from "../assets/mangoes.jpg";
+
 export const mainMenu = [
   {
     id: 0,
@@ -69,10 +76,12 @@ export const mainMenu = [
   {
     id: 1,
     category: "Give the place value of a digit",
+    image: ones,
     questions: [
       {
         id: 0,
-        question: "Nanu ya ing place value na ning 217",
+        question: "Nanu ya ing place value na ning 1 keng217",
+        image: ones,
         answers: [
           { answer: "ones", correct: false },
           { answer: "tens", correct: true },
@@ -82,7 +91,8 @@ export const mainMenu = [
       },
       {
         id: 1,
-        question: "Nanu ya ing place value na ning 346",
+        question: "Nanu ya ing place value na ning 6 keng 346",
+        image: ones,
         answers: [
           { answer: "ones", correct: true },
           { answer: "tens", correct: false },
@@ -92,7 +102,8 @@ export const mainMenu = [
       },
       {
         id: 2,
-        question: "Nanu ya ing place value na ning 789",
+        question: "Nanu ya ing place value na ning 7 keng 789",
+        image: ones,
         answers: [
           { answer: "ones", correct: false },
           { answer: "tens", correct: false },
@@ -110,6 +121,7 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
+        image: numbers,
         question: "Kumpletwan la reng bilang. Mumuna ___, 125",
         answers: [
           { answer: "123", correct: false },
@@ -121,6 +133,7 @@ export const mainMenu = [
       {
         id: 1,
         question: "Pangadwa ___, 146",
+        image: numbers,
         answers: [
           { answer: "145", correct: true },
           { answer: "147", correct: false },
@@ -132,6 +145,7 @@ export const mainMenu = [
       {
         id: 2,
         question: "Pangatlu 133, ___, 135",
+        image: numbers,
         answers: [
           { answer: "136", correct: false },
           { answer: "132", correct: false },
@@ -142,6 +156,7 @@ export const mainMenu = [
       {
         id: 3,
         question: "Pangapat 151, ___, 153",
+        image: numbers,
         answers: [
           { answer: "155", correct: false },
           { answer: "152", correct: true },
@@ -152,6 +167,7 @@ export const mainMenu = [
       {
         id: 4,
         question: "Panglima 164, ___",
+        image: numbers,
         answers: [
           { answer: "163", correct: false },
           { answer: "166", correct: false },
@@ -167,8 +183,10 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
+
         question:
           "Basan at ukumpara la ring mitutuki. Isulat ing <,> o kaya = kareng pipag pilinan. Mumuna, Ing bulsa king istanti mikakaalaga yang P350.00 kabang itang pantalun P425.00. Ikumpara ing presyu ning bulsa king pantalun. P350.00 ___ P425.00",
+        image: greaterless,
         answers: [
           { answer: "<", correct: true },
           { answer: ">", correct: false },
@@ -179,6 +197,7 @@ export const mainMenu = [
         id: 1,
         question:
           "Pangadwa, Magobra la ri arnold at Leny king pabrika. Tatanggap yang P380.00 balang aldo i Arnold. Tatatnggap neng manng P P365.00 balang aldo i Leny. Ikumapara la ring sweldu ra ring adwang magobra. P380 ___ P365",
+        image: greaterless,
         answers: [
           { answer: "<", correct: false },
           { answer: ">", correct: true },
@@ -189,6 +208,7 @@ export const mainMenu = [
         id: 2,
         question:
           "Pangatlu, Pinupul yang 215 kaban a pale i Tang Ado. Pinupul ya namang 215 kaban a pale i Tang Kiku. Ikumpara la ding bilang ding pupul dang kaban a pupul. 215 ___ 215",
+        image: greaterless,
         answers: [
           { answer: "<", correct: false },
           { answer: ">", correct: false },
@@ -204,7 +224,8 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Propery ya ampong (c) nung Commulative Property ya. Mumuna, 23 + 54 = 54 + 23",
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. Mumuna, 23 + 54 = 54 + 23",
+        image: numbersforkids,
         answers: [
           { answer: "Z", correct: false },
           { answer: "C", correct: true },
@@ -213,6 +234,7 @@ export const mainMenu = [
       {
         id: 1,
         question: "120 + 0",
+        image: numbersforkids,
         answers: [
           { answer: "Z", correct: false },
           { answer: "C", correct: true },
@@ -221,6 +243,7 @@ export const mainMenu = [
       {
         id: 2,
         question: "0z + 57",
+        image: numbersforkids,
         answers: [
           { answer: "Z", correct: false },
           { answer: "C", correct: true },
@@ -229,6 +252,7 @@ export const mainMenu = [
       {
         id: 3,
         question: "20 + 6 = 6 + 20",
+        image: numbersforkids,
         answers: [
           { answer: "Z", correct: false },
           { answer: "C", correct: true },
@@ -237,6 +261,7 @@ export const mainMenu = [
       {
         id: 4,
         question: "15 + 3 = 18 18 = 3 + 15",
+        image: numbersforkids,
         answers: [
           { answer: "Z", correct: false },
           { answer: "C", correct: true },
@@ -252,6 +277,7 @@ export const mainMenu = [
         id: 0,
         question:
           "Addition sentences. Basan at pakibatan ing kutang. Ating 18 lalaki ampong 21 a babai king klasi ng Mrs. Ruiz, pilan la ngan deng istudyanti ng Mrs. Ruiz?",
+        image: groupofstudents,
         answers: [
           { answer: "38", correct: false },
           { answer: "39", correct: true },
@@ -263,6 +289,7 @@ export const mainMenu = [
         id: 1,
         question:
           "Memupul yang mangga i Mang Erning king kayang mulahan, 44 lang ikwa na king metung mangga ampong 52 ketang metung. Pilan la eganagana ring mangga?",
+        image: mangoes,
         answers: [
           { answer: "92", correct: false },
           { answer: "93", correct: false },
@@ -282,36 +309,45 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane?",
-        type: "Nanu ya ing kutang",
+          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING KUTANG keng mebanggit a senaryu",
+
         answers: [
           {
-            answer:
-              "Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240",
+            answer: "Pilan lang krayola deng seli nang Aling Joane?",
             correct: false,
           },
           { answer: "Magkanu ngan ing beyaran ng Aling Joane?", correct: true },
-          { answer: "Addition Subtraction", correct: false },
-          { answer: "para karing krayola at ballpen da", correct: false },
+          {
+            answer: "Magkanu ing krayolang seli nang Aling Joane?",
+            correct: false,
+          },
+          {
+            answer: "Pilan la reng seli nang notebooks aling Joane?",
+            correct: false,
+          },
         ],
       },
       {
         id: 1,
         question:
-          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane?",
-        type: "Nanu ya ing Given",
+          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING GIVEN",
         answers: [
           {
-            answer:
-              "Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu.",
+            answer: "240 notebooks, 125 ballpen ampo krayola, 750 diksyunaryu",
             correct: true,
           },
           {
-            answer: "Magkanu ngan ing beyaran ng Aling Joane?",
+            answer: "250 notebooks, 126 ballpen ampo krayola, 670 diksyunaruyu",
             correct: false,
           },
-          { answer: "Addition Subtraction", correct: false },
-          { answer: "para karing krayola at ballpen da", correct: false },
+          {
+            answer: "235 notebooks, 126 ballpen ampo krayola, 660 diksyunaryu",
+            correct: false,
+          },
+          {
+            answer: "365 notebooks, 123 ballpen a mpo krayola, 530 diksyunaryu",
+            correct: false,
+          },
         ],
       },
       {
