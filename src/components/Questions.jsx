@@ -9,7 +9,7 @@ const Questions = (props) => {
   const [count, setCount] = React.useState(0);
   const [pageID, setPageID] = React.useState(Number(id));
   const intervalRef = useRef(null);
-  const [timer, setTimer] = React.useState("00");
+  const [timer, setTimer] = React.useState("0");
   const getTimerRemaining = (endtime) => {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -24,17 +24,20 @@ const Questions = (props) => {
       seconds,
     };
   };
+
   const startTimer = (deadline) => {
-    let { total, days, hours, minutes, seconds } = getTimerRemaining(deadline);
+    let { total, seconds } = getTimerRemaining(deadline);
     if (total >= 0) {
       setTimer(seconds > 9 ? seconds : "0" + seconds);
     } else {
       clearInterval(intervalRef.current);
+      alert("Time is up! The correct answer is");
     }
   };
   const clearTimer = (endtime) => {
-    setTimer("10");
+    setTimer("30");
     if (intervalRef.current) clearInterval(intervalRef.current);
+
     const id = setInterval(() => {
       startTimer(endtime);
     }, 1000);
@@ -44,7 +47,7 @@ const Questions = (props) => {
   const getDeadlineTime = () => {
     let deadline = new Date();
 
-    deadline.setSeconds(deadline.getSeconds() + 10);
+    deadline.setSeconds(deadline.getSeconds() + 30);
     return deadline;
   };
   useEffect(() => {
@@ -55,6 +58,7 @@ const Questions = (props) => {
   }, []);
 
   const setNextQuestion = () => {
+    setTimer();
     if (count < 4) {
       setCount(count + 1);
     } else {
@@ -67,11 +71,15 @@ const Questions = (props) => {
   const alertMessage = (correct) => {
     if (correct === true) {
       alert("CORRECT!!");
+    } else {
+      alert("WRONG!!");
     }
   };
+
   return (
     <div className="question-container">
-      {timer}
+      <div className="timer">{timer}</div>
+
       <div className="image">
         <img
           src={mainMenu[pageID].questions[count].image}
