@@ -9,7 +9,10 @@ import numbers from "../assets/numbers.png";
 import greaterless from "../assets/greaterless.png";
 import numbersforkids from "../assets/numberskids.png";
 import groupofstudents from "../assets/groupofstudents.png";
-import mangoes from "../assets/mangoes.jpg";
+import mangoes from "../assets/mangoes.png";
+import schoolsupplies from "../assets/schoolsupplies.png";
+import markets from "../assets/markets.png";
+import operations from "../assets/operations.png";
 
 export const mainMenu = [
   {
@@ -305,12 +308,13 @@ export const mainMenu = [
   {
     id: 6,
     category: "Solve routine word problem invaluing addition",
+
     questions: [
       {
         id: 0,
         question:
           "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING KUTANG keng mebanggit a senaryu",
-
+        image: schoolsupplies,
         answers: [
           {
             answer: "Pilan lang krayola deng seli nang Aling Joane?",
@@ -331,6 +335,7 @@ export const mainMenu = [
         id: 1,
         question:
           "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING GIVEN",
+        image: schoolsupplies,
         answers: [
           {
             answer: "240 notebooks, 125 ballpen ampo krayola, 750 diksyunaryu",
@@ -353,58 +358,55 @@ export const mainMenu = [
       {
         id: 2,
         question:
-          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane?",
-        type: "Nanu ya ing operation a gamitan",
+          "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING OPERATION MEGAMIT?",
+        image: schoolsupplies,
         answers: [
           {
-            answer:
-              "Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu.",
+            answer: "Addition Multiplication",
             correct: false,
           },
           {
-            answer: "Magkanu ngan ing beyaran ng Aling Joane?",
+            answer: "Division Subtraction",
             correct: false,
           },
           { answer: "Addition Subtraction", correct: true },
-          { answer: "para karing krayola at ballpen da", correct: false },
+          { answer: "Multiplication Division", correct: false },
         ],
       },
       {
         id: 3,
         question:
-          "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata. Magkanu ing beyaran eganagana?",
-        type: "Nanu ya ing kutang?",
+          "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata. Magkanu ing beyaran eganagana? NANU YA ING GIVEN.",
+        image: markets,
         answers: [
           {
-            answer:
-              "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata",
-            correct: false,
-          },
-          {
-            answer: "Magkanu ing beyaran eganagana?",
+            answer: "P425 Gule, P750.25 Delata",
             correct: true,
           },
-          { answer: "Addition Subtraction", correct: false },
-          { answer: "P425.00, P750.25", correct: false },
+          {
+            answer: "P64 Gule, P120 Delata?",
+            correct: false,
+          },
+          { answer: "P420 Gule, P750.25 Delata", correct: false },
+          { answer: "P435.00, P760.25", correct: false },
         ],
       },
       {
         id: 4,
         question:
-          "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata. Magkanu ing beyaran eganagana?",
-        type: "Nanu ya ing Operation?",
+          "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata. Magkanu ing beyaran eganagana? NANU YA ING OPERATION",
+        image: markets,
         answers: [
           {
-            answer:
-              "Menyali ya i Aling Luning para king kayang tindaan, mekasali yang ulagang P425.00 a gule ampong P750.25 ulagang delata",
+            answer: "Addition Multiplication",
             correct: false,
           },
           {
-            answer: "Magkanu ing beyaran eganagana?",
+            answer: "Division Subtraction",
             correct: false,
           },
           { answer: "Addition Subtraction", correct: true },
-          { answer: "P425.00, P750.25", correct: false },
+          { answer: "Multiplication Division", correct: false },
         ],
       },
     ],
@@ -417,6 +419,7 @@ export const mainMenu = [
         id: 0,
         question:
           "Panintunan ya ing mawawalaang difference. Mumuna, 278 - 23 = ___",
+        image: operations,
         answers: [
           { answer: "256", correct: false },
           { answer: "265", correct: false },
@@ -427,6 +430,7 @@ export const mainMenu = [
       {
         id: 1,
         question: "386 - 75 = ___",
+        image: operations,
         answers: [
           { answer: "311", correct: true },
           { answer: "310", correct: false },
@@ -436,7 +440,9 @@ export const mainMenu = [
       },
       {
         id: 2,
+
         question: "894 - 52 = ___",
+        image: operations,
         answers: [
           { answer: "841", correct: false },
           { answer: "833", correct: false },
@@ -447,6 +453,7 @@ export const mainMenu = [
       {
         id: 3,
         question: "159 - ___ = 45",
+        image: operations,
         answers: [
           { answer: "114", correct: true },
           { answer: "354", correct: false },
@@ -457,6 +464,7 @@ export const mainMenu = [
       {
         id: 4,
         question: "376 - ___ = 24",
+        image: operations,
         answers: [
           { answer: "352", correct: true },
           { answer: "333", correct: false },
