@@ -696,17 +696,7 @@ export const mainMenu = [
       },
     ],
   },
-  {
-    id: 11,
-    category: "Solve routine word problem invaluing addition and subtraction",
-    questions: [
-      { id: 0, question: "Question 1", answers: [] },
-      { id: 1, question: "Question 2", answers: [] },
-      { id: 2, question: "Question 3", answers: [] },
-      { id: 3, question: "Question 4", answers: [] },
-      { id: 4, question: "Question 5", answers: [] },
-    ],
-  },
+
   {
     id: 11,
     category: "Solve routine word problem invaluing addition and subtraction",
@@ -714,20 +704,18 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Sinali yang Php 287.00 libru ampong Php 58.00 a ballpen i Sherly. Nung memye yang Php 400.00 king magtinda, magkanu pa ing meging sukli na?",
-        type: "KUTANG",
+          "Sinali yang Php 287.00 libru ampong Php 58.00 a ballpen i Sherly. Nung memye yang Php 400.00 king magtinda, magkanu pa ing meging sukli na? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Ninu ing sinali?", correct: false },
-          { answer: "Pilan la reng seli nang bage?", correct: false },
-          { answer: "Magkanu ya pera i Sherly?", correct: false },
-          { answer: "Magkanu pa ing sukli nang Sherly?", correct: true },
+          { answer: "Ing taung sinali.", correct: false },
+          { answer: "Bilang da reng seli ng bage.", correct: false },
+          { answer: "Ulaga ning perang nang Sherly.", correct: false },
+          { answer: "Ulaga ning sukli nang Sherly.", correct: true },
         ],
       },
       {
         id: 1,
         question:
-          "Sinali yang Php 287.00 libru ampong Php 58.00 a ballpen i Sherly. Nung memye yang Php 400.00 king magtinda, magkanu pa ing meging sukli na?",
-        type: "GIVEN",
+          "Sinali yang Php 287.00 libru ampong Php 58.00 a ballpen i Sherly. Nung memye yang Php 400.00 king magtinda, magkanu pa ing meging sukli na? Nanu la reng GIVEN ning problem?",
         answers: [
           {
             answer:
@@ -754,8 +742,7 @@ export const mainMenu = [
       {
         id: 2,
         question:
-          "Mekarakap yang 132 asan i Mang Nardo. Ding 56 hitu la, ding 48 bulig la, at ding mitagan bangus la. Pilan la ngan ding bangus a arakap na?",
-        type: "OPERATION",
+          "Mekarakap yang 132 asan i Mang Nardo. Ding 56 hitu la, ding 48 bulig la, at ding mitagan bangus la. Pilan la ngan ding bangus a arakap na? Nanung la reng OPERATION a ginamit?",
         answers: [
           { answer: "ADDITION ampo SUBTRACTION", correct: true },
           { answer: "MULTIPLICATION ampo DIVISION", correct: false },
@@ -766,27 +753,22 @@ export const mainMenu = [
       {
         id: 3,
         question:
-          "Ing Masamat Elementary School atin yang magaral a 32 kindergarten, 145 a magaral magumpisang Grade I hanggang Grade III. Nung ing eskwela atin yang 262 eganaganang magaral, pilan la ngan ding atsu king Grade IV hanggang Grade VI?",
-        type: "NUMBER SENTENCE",
+          "Ing Masamat Elementary School atin yang magaral a 32 kindergarten, 145 a magaral magumpisang Grade I hanggang Grade III. Nung ing eskwela atin yang 262 eganaganang magaral, pilan la ngan ding atsu king Grade IV hanggang Grade VI? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer:
-              "Idagdag me ing 32 a kindergarten keng 145 a magaral magumpisang Grade I hanggang Grade III tapus ilako me ing piabeng sagut keng 262 a egana ganang magaral para akwa me reng bilang ning magaral magumpisang Grade IV hanggang Grade VI.",
+            answer: "262-(32+145) = N",
             correct: true,
           },
           {
-            answer:
-              "Ilako mula reng 262 a eganaganang magaral keng 145 a magaral magumpisang Grade I hanggang Grade III tapus ipitna me ing sagut keng 32 kindergarten.",
+            answer: "(262-145)/32 = N",
             correct: false,
           },
           {
-            answer:
-              "Idagdag mula reng 32 kindergarten, 145 a magaral magumpisang Grade I hanggang Grade III ampo reng 262 a eganaganang magaral.",
+            answer: "32+145+262 = N",
             correct: false,
           },
           {
-            answer:
-              "Ilako mula reng 262 a Grade IV to VI keng 145 a eganaganang magaral ampo 32 a Grade I hanggang Grade III. ",
+            answer: "262-145-32 = N",
             correct: false,
           },
         ],
@@ -794,8 +776,7 @@ export const mainMenu = [
       {
         id: 4,
         question:
-          "Ing Masamat Elementary School atin yang magaral a 32 kindergarten, 145 a magaral magumpisang Grade I hanggang Grade III. Nung ing eskwela atin yang 262 eganaganang magaral, pilan la ngan ding atsu king Grade IV hanggang Grade VI?",
-        type: "SAGUT",
+          "Ing Masamat Elementary School atin yang magaral a 32 kindergarten, 145 a magaral magumpisang Grade I hanggang Grade III. Nung ing eskwela atin yang 262 eganaganang magaral, pilan la ngan ding atsu king Grade IV hanggang Grade VI? Nanu ya ing SAGUT?",
         answers: [
           {
             answer: "64 a magaral magumpisang Grade IV to Grade VI",
@@ -827,23 +808,22 @@ export const mainMenu = [
           {
             id: 0,
             question:
-              "Sosopan neng Caloy I tatang manaling petsay. Balang tali atin yang 4 a tanamang petsay. Pilan lang petsay ding 9 a tali?",
-            type: "NUMBER SENTENCE",
+              "Sosopan neng Caloy I tatang manaling petsay. Balang tali atin yang 4 a tanamang petsay. Pilan lang petsay ding 9 a tali? Nanu ya ing NUMBER SENTENCE?",
             answers: [
               {
-                answer: "Imultiply la reng 4 a petsay keng 9 a tali.",
+                answer: "4 x 9 = N",
                 correct: true,
               },
               {
-                answer: "Idivide la reng 9 a tali keng 4 a petsay.",
+                answer: "9 / 4 = N",
                 correct: false,
               },
               {
-                answer: "Imultiply la reng tali ampo 9 a petsay.",
+                answer: "9 x 9 = N",
                 correct: false,
               },
               {
-                answer: "Idagdag la reng 4 a petsay keng 9 a tali.",
+                answer: "4 x 4 = N",
                 correct: false,
               },
             ],
@@ -851,14 +831,13 @@ export const mainMenu = [
           {
             id: 1,
             question:
-              "King metung a klasi ating 8 row a maki 5 magaral Pilan la ngan ding magaral king klasi.",
-            type: "KUTANG",
+              "King metung a klasi ating 8 row a maki 5 magaral Pilan la ngan ding magaral king klasi. Nanu ya ing KUTANG?",
             answers: [
-              { answer: "Pila la reng row ampo magaral?", correct: false },
-              { answer: "Pilan la reng row keng klasi?", correct: false },
-              { answer: "Pilan la reng magaral bawal row?", correct: false },
+              { answer: "Bilang da reng row ampo magaral.", correct: false },
+              { answer: "Bilang da reng row keng klasi.", correct: false },
+              { answer: "Bilang da reng magaral bawal row.", correct: false },
               {
-                answer: "Pilan la ngan ding magaral king klasi?",
+                answer: "Bilang da ngan ding magaral king klasi.",
                 correct: true,
               },
             ],
@@ -866,41 +845,39 @@ export const mainMenu = [
           {
             id: 2,
             question:
-              "Gagamit yang 12 ebun I Mang Rosa king balang leche flan a gagawan na. Nung mekagawa yang 6 a leche flan, pilan lang ebun ding ginamit na?",
-            type: "KUTANG",
+              "Gagamit yang 12 ebun I Mang Rosa king balang leche flan a gagawan na. Nung mekagawa yang 6 a leche flan, pilan lang ebun ding ginamit na? Nanu ya ing KUTANG?",
             answers: [
               {
-                answer: "Pilan lang ebun keng metung a leche flan?",
+                answer: "Bilang da reng ebun keng metung a leche flan.",
                 correct: false,
               },
               {
-                answer: "Pilan lang reng eganaganang ebun a ginamit na?",
+                answer: "Bilang da reng eganaganang ebun a ginamit na.",
                 correct: true,
               },
-              { answer: "Pilan la reng leche flan?", correct: false },
-              { answer: "Ninu ing gagawang leche flan?", correct: false },
+              { answer: "Bilang da reng leche flan.", correct: false },
+              { answer: "Ing taung gagawang leche flan.", correct: false },
             ],
           },
           {
             id: 3,
             question:
-              "Atin yang 7 kapaya ing metung a basket. Lima la ring basket. Pilan la ngan ding kapaya?",
-            type: "NUMBER SENTENCE",
+              "Atin yang 7 kapaya ing metung a basket. Lima la ring basket. Pilan la ngan ding kapaya? Nanu ya ing NUMBER SENTENCE?",
             answers: [
               {
-                answer: "Idagdag mula reng 7 kapaya keng limang basket.",
+                answer: "7 + 5 = N",
                 correct: false,
               },
               {
-                answer: "Imultiply mo reng 7 kapaya keng limang basket.",
+                answer: "7 x 5 = N",
                 correct: true,
               },
               {
-                answer: "Imultiply mula reng 5 kapaya keng pitung basket",
+                answer: "5 x 5 = N",
                 correct: false,
               },
               {
-                answer: "Ilako mu la reng 7 kapaya keng limang basket",
+                answer: "7 - 5 = N",
                 correct: false,
               },
             ],
@@ -908,19 +885,18 @@ export const mainMenu = [
           {
             id: 4,
             question:
-              "Balang metung karing 4 a mikakaluguran magdala yang 5 a libru king kayang bag. Pilan la ngan ding libru?",
-            type: "NUMBER SENTENCE",
+              "Balang metung karing 4 a mikakaluguran magdala yang 5 a libru king kayang bag. Pilan la ngan ding libru? Nanu ya ing NUMBER SENTENCE?",
             answers: [
               {
-                answer: "Imultiply mo reng 5 libru keng 4 a mikakaluguran",
+                answer: "5 x 4 = N",
                 correct: true,
               },
-              { answer: "Ilako mula keng bag reng 5 a libru.", correct: false },
+              { answer: "5 - 4 = N", correct: false },
               {
-                answer: "idagdag mula reng 4 a mikakaluguran keng 5 a libru.",
+                answer: "4 + 5 = N",
                 correct: false,
               },
-              { answer: "Pilan la reng mikakaluguran?", correct: false },
+              { answer: "Alang sagut", correct: false },
             ],
           },
         ],
@@ -935,39 +911,34 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan?",
-        type: "KUTANG",
+          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Pilan la reng pizza?", correct: false },
-          { answer: "Pilan lang pirasu reng e mepangan?", correct: true },
-          { answer: "Pilan la reng pirasu ning pizza?", correct: false },
-          { answer: "Pilan lang pizza reng mepangan?", correct: false },
+          { answer: "Bilang da reng pizza.", correct: false },
+          { answer: "Bilang da reng pirasu e mepangan.", correct: true },
+          { answer: "Bilang da reng pirasu ning pizza.", correct: false },
+          { answer: "Bilang da reng pizzang mepangan.", correct: false },
         ],
       },
       {
         id: 1,
         question:
-          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan?",
+          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan? Nanu ya ing NUMBER SENTENCE?",
         type: "NUMBER SENTENCE",
         answers: [
           {
-            answer:
-              "Imultiply mula reng 8 a pirasu keng 4 a kaung pizza. Ing sagut ilako mo reng 20 a pirasu mepangan.",
+            answer: "(8 x 4) - 20 = N",
             correct: true,
           },
           {
-            answer:
-              "Ilako mula reng 4 a kaung pizza keng 8 a pirasu tapus imultiply mula reng 20 a pirasung mepangan",
+            answer: "(8 - 4) x 20 = N",
             correct: false,
           },
           {
-            answer:
-              "Idagdag mula reng 20 a pirasung mepangan keng 8 a pirasu tapus idagdag mula naman keng 4 a kaung pizza.",
+            answer: "20 + 4 + 8 = N",
             correct: false,
           },
           {
-            answer:
-              "Imultiply mula reng 4 a kaung pizza, 8 a pirasu ampo 20 pirasung mepangan",
+            answer: "4 x 8 x 20 = N",
             correct: false,
           },
         ],
@@ -975,8 +946,7 @@ export const mainMenu = [
       {
         id: 2,
         question:
-          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan?",
-        type: "SAGUT",
+          "Ating 4 a kaung pizza. Ing balang kaun atin yang 8 pirasu. Nung 20 pirasu la ring mepangan, pilan lang pirasu ring e mepangan? Nanu ya ing SAGUT?",
         answers: [
           { answer: "20 la reng pizza emepangan.", correct: false },
           { answer: "10 lareng pizza emepangan.", correct: false },
@@ -987,32 +957,27 @@ export const mainMenu = [
       {
         id: 3,
         question:
-          "Atin yang 5 taling libru ing librarian ning metung a eskwela. Ating yang 10 libru ing balang tali. Nung ding 36 a libru meandam la, pilan lang libru ring e meandam?",
-        type: "NUMBER SENTENCE",
+          "Atin yang 5 taling libru ing librarian ning metung a eskwela. Ating yang 10 libru ing balang tali. Nung ding 36 a libru meandam la, pilan lang libru ring e meandam? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer:
-              "Idagdag la reng 5 a taling libru keng 10 libru bawat tali.",
+            answer: "5 + 10 = N",
             correct: false,
           },
           {
-            answer:
-              "Imultiply la reng 5 taling libru keng 10 libru bawat tali tapus ing sagut ilako mula reng 36 a meandam a libru.",
+            answer: "(5 x 10) - 36 = N",
             correct: true,
           },
           {
-            answer:
-              "Ilako mula reng 5 taling libru keng 10 libru bawat tali tas imultiply mula reng 36 a meandam libru.",
+            answer: "(5 - 19) x 36 = N",
             correct: false,
           },
-          { answer: "Ilako la reng 36 a librung meandam.", correct: false },
+          { answer: "N - 36", correct: false },
         ],
       },
       {
         id: 4,
         question:
-          "Atin yang 5 taling libru ing librarian ning metung a eskwela. Ating yang 10 libru ing balang tali. Nung ding 36 a libru meandam la, pilan lang libru ring e meandam?",
-        type: "SAGUT",
+          "Atin yang 5 taling libru ing librarian ning metung a eskwela. Ating yang 10 libru ing balang tali. Nung ding 36 a libru meandam la, pilan lang libru ring e meandam? Nanu ya ing SAGUT?",
         answers: [
           { answer: "14 la reng librung emeandam.", correct: true },
           { answer: "Ala nang e meandam.", correct: false },
@@ -1029,24 +994,25 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Atin yang 15 olen I Tang Noel. Pinitna nalang pare pareu karing 3 nang paunakan. Pilang olen ing tinggap ning balang paunakan na?",
-        type: "KUTANG",
+          "Atin yang 15 olen I Tang Noel. Pinitna nalang pare pareu karing 3 nang paunakan. Pilang olen ing tinggap ning balang paunakan na? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Pilang olen ing tinggap nang Tang Noel?", correct: false },
-          { answer: "Pilan la reng olen?", correct: false },
+          {
+            answer: "Bilang da reng olen na tinggap nang Tang Noel.",
+            correct: false,
+          },
+          { answer: "Bilang da reng olen.", correct: false },
           {
             answer:
-              "Pilang olen ing tinggap ning balang paunakan nang Tang Olen?",
+              "Bilang da reng olen na tinggap ning balang paunakan nang Tang Olen.",
             correct: true,
           },
-          { answer: "Pilan la reng paunakan?", correct: false },
+          { answer: "Bilang da reng paunakan.", correct: false },
         ],
       },
       {
         id: 1,
         question:
-          "Bisa yang saling kending tsokolati i Jhon Bernel a tsa Php 4.00 balang kendi. Nung atin yang Php 32.00 pilan ing asali na?",
-        type: "GIVEN",
+          "Bisa yang saling kending tsokolati i Jhon Bernel a tsa Php 4.00 balang kendi. Nung atin yang Php 32.00 pilan ing asali na? Nanu ya ing GIVEN?",
         answers: [
           { answer: "4 a kendi ampo 32 a tsokolati", correct: false },
           { answer: "32 a kendi ampo Php 4.00 bawat kendi", correct: false },
@@ -1064,26 +1030,24 @@ export const mainMenu = [
       {
         id: 2,
         question:
-          "Atin yang 45 sampagang papil I Lizette Nelle a ginrupu na king 5 klasi. Pilang samagang papil ing laman ning balang klasi?",
-        type: "KUTANG",
+          "Atin yang 45 sampagang papil I Lizette Nelle a ginrupu na king 5 klasi. Pilang samagang papil ing laman ning balang klasi? Nanu ya ing KUTANG?",
         answers: [
           {
-            answer: "Pilan la reng sampangan papil nang Lizette Nelle?",
+            answer: "Bilang da reng sampangan papil nang Lizette Nelle.",
             correct: false,
           },
           {
-            answer: "Pilang samagang papil ing laman ning balang klasi?",
+            answer: "bilang da reng samagang papil na laman ning balang klasi.",
             correct: true,
           },
-          { answer: "Ninu ing memyeng sampagang papil?", correct: false },
-          { answer: "Pilan la reng klasi?", correct: false },
+          { answer: "Ing taung memyeng sampagang papil.", correct: false },
+          { answer: "Bilang da reng klasi.", correct: false },
         ],
       },
       {
         id: 3,
         question:
-          "Labing adwang bangus la ring 6 a kilu. Pilan lang bangus ding metung a kilu?",
-        type: "GIVEN",
+          "Labing adwang bangus la ring 6 a kilu. Pilan lang bangus ding metung a kilu? Nanu ya ing GIVEN?",
         answers: [
           { answer: "Labing adwang bangus ampo 6 a kilu", correct: true },
           { answer: "Anam a bangus ampo 12 a kilu", correct: false },
@@ -1094,8 +1058,7 @@ export const mainMenu = [
       {
         id: 4,
         question:
-          "Ating yang 6 a notebooks I JB. Binalut nala. Ginamit yang 3 kule. Pilang notebooks ing binalut na karing balang kule?",
-        type: "GIVEN",
+          "Ating yang 6 a notebooks I JB. Binalut nala. Ginamit yang 3 kule. Pilang notebooks ing binalut na karing balang kule? Nanu ya ing GIVEN?",
         answers: [
           { answer: "9 la reng binalut", correct: false },
           { answer: "3 notebooks ampo 6 a kule", correct: false },
@@ -1112,38 +1075,35 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Tinanggap yang Php 32.00 I Lito parang karing 8 kilung dyaryung pisali na. Magkanu ya ing balang kilung dyaryu?",
-        type: "KUTANG",
+          "Tinanggap yang Php 32.00 I Lito parang karing 8 kilung dyaryung pisali na. Magkanu ya ing balang kilung dyaryu? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Magkanu ya ing balang kilung dyaryu?", correct: true },
-          { answer: "Magkanu ya ing 8 a kilung dyaryu?", correct: false },
-          { answer: "Pilan ya pera I Lito?", correct: false },
-          { answer: "Pilan la reng dyaryu?", correct: false },
+          { answer: "Ulaga ning balang kilung dyaryu.", correct: true },
+          { answer: "Ulaga ning 8 a kilung dyaryu.", correct: false },
+          { answer: "Bilang na pera nang Lito.", correct: false },
+          { answer: "Bilang da reng dyaryu.", correct: false },
         ],
       },
       {
         id: 1,
         question:
-          "Minta ya tindahan I Jhon ban saling 8 biskwit. Memayad yang Php 56.00 Magkanu ya ing metung a biskwit?",
-        type: "KUTANG",
+          "Minta ya tindahan I Jhon ban saling 8 biskwit. Memayad yang Php 56.00 Magkanu ya ing metung a biskwit? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Nokarin ya minta I Jhon?", correct: false },
-          { answer: "Magkanu ya ing metung a biscuit?", correct: true },
-          { answer: "Nanu ya ing seli nang Jhon?", correct: false },
-          { answer: "Magkanu ya ing binayad nang Jhon?", correct: false },
+          { answer: "Lugar a pintalan ng Jhon.", correct: false },
+          { answer: "Ulaga ning metung a biscuit.", correct: true },
+          { answer: "Bage a seli nang Jhon.", correct: false },
+          { answer: "Ulaga ning binayad nang Jhon.", correct: false },
         ],
       },
       {
         id: 2,
         question:
-          "Mekatipun yang Php 72.00 I Eman kilub ning 8 aldo. Magkanu ing atitipun na king balang aldo?",
-        type: "KUTANG",
+          "Mekatipun yang Php 72.00 I Eman kilub ning 8 aldo. Magkanu ing atitipun na king balang aldo? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Ninung menipun Php 72.00?", correct: false },
-          { answer: "Pilan yang aldo menipun I Eman?", correct: false },
-          { answer: "Pilan ya ing atipun nang Eman?", correct: false },
+          { answer: "Ing taung menipun Php 72.00.", correct: false },
+          { answer: "Bilang ning aldo menipun I Eman.", correct: false },
+          { answer: "Bilang ning atipun nang Eman.", correct: false },
           {
-            answer: "Magkanu ing atitipun nang Eman king balang aldo?",
+            answer: "Ulaga ning atitipun nang Eman king balang aldo.",
             correct: true,
           },
         ],
@@ -1151,23 +1111,22 @@ export const mainMenu = [
       {
         id: 3,
         question:
-          "Binalut nalang Eunice ding 72 pirasung manggang tarts king 9 na paketi. Pilang pirasu ing laman ning metung a pekti?",
-        type: "NUMBER SENTENCE",
+          "Binalut nalang Eunice ding 72 pirasung manggang tarts king 9 na paketi. Pilang pirasu ing laman ning metung a pekti? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer: "Idivide la reng 72 a mangang tarts keng 9 a paketi.",
+            answer: "72 / 9 = N",
             correct: true,
           },
           {
-            answer: "Imultiply la reng 72 a mangang tarts keng 9 a paketi.",
+            answer: "72 x 9 = N",
             correct: false,
           },
           {
-            answer: "Idagdag la reng 72 a mangang tarts keng 9 a paketi.",
+            answer: "72 + 9 = N",
             correct: false,
           },
           {
-            answer: "Ilako la reng 72 a mangang tarts keng 9 a paketi.",
+            answer: "72 - 9 = N",
             correct: false,
           },
         ],
@@ -1175,20 +1134,19 @@ export const mainMenu = [
       {
         id: 4,
         question:
-          "Atin yang 3 anak I Riza. Sinali yang 6 a mansanas at ipitna nala karing anak na. Pilang mansanas ing tanggapan ning baling anak na?",
-        type: "NUMBER SENTENCE",
+          "Atin yang 3 anak I Riza. Sinali yang 6 a mansanas at ipitna nala karing anak na. Pilang mansanas ing tanggapan ning baling anak na? Nanu ya ing NUMBER SENTENCE?",
         answers: [
-          { answer: "Ipitna mula reng mansanas.", correct: false },
+          { answer: "3 / 6 = N", correct: false },
           {
-            answer: "Ipitna mula reng 3 a mansanas keng 6 anak nang Riza",
+            answer: "3 - 6 = N",
             correct: false,
           },
           {
-            answer: "Ipitna mula reng 6 a mansanas keng 3 anak nang Riza",
+            answer: "6 / 3 = N",
             correct: true,
           },
           {
-            answer: "Imultiply mula reng 6 a mansanas keng 3 anak nang Riza",
+            answer: "6 x 3 = N",
             correct: false,
           },
         ],
@@ -1203,52 +1161,50 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Sinali yang 0 a paketing sabun ing makibandi keng metung a tindahan. Nung ing balang paketi atin yang 3 pirasung sabun, pilan pirasung sabun in asali na?",
-        type: "KUTANG",
+          "Sinali yang 0 a paketing sabun ing makibandi keng metung a tindahan. Nung ing balang paketi atin yang 3 pirasung sabun, pilan pirasung sabun in asali na? Nanu ya ing KUTANG?",
         answers: [
-          { answer: "Pilan paketi ing asali na?", correct: false },
-          { answer: "Pilan sabun ing seli da?", correct: false },
-          { answer: "Pilang pirasung sabun in asali na?", correct: true },
-          { answer: "Ninu ing mikibandi keng tindahan?", correct: false },
+          { answer: "Bilang ning paketi ing asali na.", correct: false },
+          { answer: "Bilang ning sabun ing seli da.", correct: false },
+          {
+            answer: "Bilang da reng pirasung sabun na asali na.",
+            correct: true,
+          },
+          { answer: "Ing taung mikibandi keng tindahan.", correct: false },
         ],
       },
       {
         id: 1,
         question:
-          "Mekaiskor yang 18 puntus I Alvin king karelang pyalung a basketball. Nung ing buslu na king bola 9 a besis, pilan lang puntus ring katumbas da ding balang buslu na?",
-        type: "KUTANG",
+          "Mekaiskor yang 18 puntus I Alvin king karelang pyalung a basketball. Nung ing buslu na king bola 9 a besis, pilan lang puntus ring katumbas da ding balang buslu na? Nanu ya ing KUTANG?",
         answers: [
           {
-            answer: "Pilan lang puntus ring katumbas da ding balang buslu na?",
+            answer: "Bilang da reng puntus a katumbas da ding balang buslu na.",
             correct: true,
           },
-          { answer: "Pilan lang bola reng ginamit na?", correct: false },
-          { answer: "Pilan lang puntus reng ikwa na?", correct: false },
-          { answer: "Ninu ing memyalung basketball?", correct: false },
+          { answer: "Bilang da reng bola ginamit na.", correct: false },
+          { answer: "Bilang da reng puntus a ikwa na.", correct: false },
+          { answer: "Ing taung memyalung basketball.", correct: false },
         ],
       },
       {
         id: 2,
         question:
-          "Sinali yang 18 kortina I Mang Aning para karing 6 nang awang. Pilang kortina ing ikabit na king balang awang?",
-        type: "NUMBER SENTENCE",
+          "Sinali yang 18 kortina I Mang Aning para karing 6 nang awang. Pilang kortina ing ikabit na king balang awang? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer: "Imultiply me ing 18 a kortina keng 6 a awang.",
+            answer: "18 x 6 = N",
             correct: false,
           },
           {
-            answer:
-              "Ipitna me ing 18 a kortina keng 6 a awang para akwa me ing total na akabit nang Mang Aning keng balang awang.",
+            answer: "18 / 6 = N",
             correct: true,
           },
           {
-            answer:
-              "Ipitna me ing 6 a kortina keng 18 a awang para akwa me ing total na akabit nang Mang Aning keng balang awang.",
+            answer: "6 / 18 = N",
             correct: false,
           },
           {
-            answer: "Idagdag mula reng 6 a awang keng 18 a kortina.",
+            answer: "18 + 6 = N",
             correct: false,
           },
         ],
@@ -1256,25 +1212,22 @@ export const mainMenu = [
       {
         id: 3,
         question:
-          "Ing 80ml. a pabanglu mibulus ya king 10ml. a boti. Pilang boti ing megamit?",
-        type: "NUMBER SENTENCE",
+          "Ing 80ml. a pabanglu mibulus ya king 10ml. a boti. Pilang boti ing megamit? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer:
-              "Ipitna me ing 80ml. a pabanglu keng 10ml. a boti para akwa mu ing total a bilang ning boti a magamit.",
+            answer: "80 / 10 = N",
             correct: true,
           },
           {
-            answer: "Ilako me ing 10ml. a boti keng 80ml. a pabanglu.",
+            answer: "10 - 80 = N",
             correct: false,
           },
           {
-            answer:
-              "Ipitna me ing 10ml. a pabanglu keng 80ml. a boti para akwa mu ing total a bilang ning boti a magamit.",
+            answer: "10 / 80 = N",
             correct: false,
           },
           {
-            answer: "Ipitna me ing boti keng 10ml a pabanglu.",
+            answer: "10 / N = 0",
             correct: false,
           },
         ],
@@ -1282,24 +1235,23 @@ export const mainMenu = [
       {
         id: 4,
         question:
-          "Atin yang 30 minutu I annie ban pakibatan ing tes na. Nung ing tes atin yang 10 kutang, pilan minutu ing dapat nang gamitan king balang kutang?",
-        type: "NUMBER SENTENCE",
+          "Atin yang 30 minutu I annie ban pakibatan ing tes na. Nung ing tes atin yang 10 kutang, pilan minutu ing dapat nang gamitan king balang kutang? Nanu ya ing NUMBER SENTENCE?",
         answers: [
           {
-            answer: "Ipitna me ing 30 minutu keng 10 a kutang ning tes.",
+            answer: "30 / 10 = N",
             correct: true,
           },
           {
-            answer: "Ipitna me ing 10 minutu keng 30 a kutang ning tes.",
+            answer: "10 / 30 = N",
             correct: false,
           },
           {
-            answer: "Ilako me ing 10 bilang ning tes keng 30 minutu",
+            answer: "10 - 30 = N",
             correct: false,
           },
           {
             answer:
-              "Imultiply me ing 10 bilang keng 30 a minutu.                                                                                                   ",
+              "10 x 30 = N.                                                                                                   ",
             correct: false,
           },
         ],
