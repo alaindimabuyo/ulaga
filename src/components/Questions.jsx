@@ -31,11 +31,10 @@ const Questions = (props) => {
       setTimer(seconds > 9 ? seconds : "0" + seconds);
     } else {
       clearInterval(intervalRef.current);
-      alert("Time is up! The correct answer is");
     }
   };
   const clearTimer = (endtime) => {
-    setTimer("30");
+    setTimer("5");
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     const id = setInterval(() => {
@@ -47,9 +46,10 @@ const Questions = (props) => {
   const getDeadlineTime = () => {
     let deadline = new Date();
 
-    deadline.setSeconds(deadline.getSeconds() + 30);
+    deadline.setSeconds(deadline.getSeconds() + 5);
     return deadline;
   };
+  console.log(timer);
   useEffect(() => {
     clearTimer(getDeadlineTime());
     return () => {
@@ -84,7 +84,7 @@ const Questions = (props) => {
         <img
           src={mainMenu[pageID].questions[count].image}
           alt="Logo"
-          width={550}
+          width={800}
         />
       </div>
       <div className="header">
@@ -95,8 +95,14 @@ const Questions = (props) => {
           <div className="answers">
             <button
               className="answer-button"
-              onClick={() => alertMessage(answer.correct)}
-            >
+              onClick={() => alertMessage(answer.correct)}>
+              {answer.image && (
+                <img
+                  src={answer.image}
+                  alt="Logo"
+                  width={150}
+                />
+              )}
               <h3 className="answer-text">{answer.answer}</h3>
             </button>
           </div>

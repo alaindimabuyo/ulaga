@@ -8,11 +8,11 @@ import imageoneeighttwo from "../assets/image18_2.png";
 import imageoneeightthree from "../assets/image18_3.png";
 import imageoneeightfour from "../assets/image18_4.png";
 import imageoneeightfive from "../assets/image18_5.png";
-import imageone from "../assets/image1.png";
-import imagetwo from "../assets/image2.png";
-import imagethree from "../assets/image3.png";
-import imagefour from "../assets/image4.png";
-import imagefive from "../assets/image5.png";
+import imageone from "../assets/imageone.png";
+import imagetwo from "../assets/imagetwo.png";
+import imagethree from "../assets/imagethree.png";
+import imagefour from "../assets/imagefour.png";
+import imagefive from "../assets/imagefive.png";
 
 import ones from "../assets/ones.png";
 import numbers from "../assets/numbers.png";
@@ -23,6 +23,21 @@ import mangoes from "../assets/mangoes.png";
 import schoolsupplies from "../assets/schoolsupplies.png";
 import markets from "../assets/markets.png";
 import operations from "../assets/operations.png";
+import tomato from "../assets/tomato.png";
+import balls from "../assets/balls.png";
+import wallet from "../assets/wallet.png";
+import straw from "../assets/straw.png";
+import stones from "../assets/stones.png";
+import bills from "../assets/bills.png";
+import papers from "../assets/papers.png";
+import students from "../assets/students.png";
+import suppliesanswer from "../assets/suppliesanswer.png";
+import manggaanswer from "../assets/manggaanswer.png";
+import operationn from "../assets/operationn.png";
+import watermelon from "../assets/watermelon.png";
+import apple from "../assets/apple.png";
+import orange from "../assets/orange.png";
+import totmato from "../assets/totmatoo.png";
 
 export const mainMenu = [
   {
@@ -32,56 +47,63 @@ export const mainMenu = [
       {
         id: 0,
         image: imageone,
-        question: "Pilan la? Pilinan lareng numerung katumbas. Mumunang imahi",
+        question:
+          "Pilan la? Pilinan lareng numerung katumbas. Pilan la reng Apple atsu keng imahi",
         answers: [
-          { answer: "532", correct: true },
-          { answer: "531", correct: false },
-          { answer: "533", correct: false },
-          { answer: "534", correct: false },
+          { answer: "532", image: apple, correct: true },
+          { answer: "531", image: apple, correct: false },
+          { answer: "533", image: apple, correct: false },
+          { answer: "534", image: apple, correct: false },
         ],
       },
       {
         id: 1,
-        question: "Pangadwang imahi",
+        question: "Pilan la reng mangga keng imahi",
         image: imagetwo,
         answers: [
-          { answer: "531", correct: false },
-          { answer: "552", correct: true },
-          { answer: "567", correct: false },
-          { answer: "652", correct: false },
+          { answer: "531", image: manggaanswer, correct: false },
+          { answer: "552", image: manggaanswer, correct: true },
+          { answer: "567", image: manggaanswer, correct: false },
+          { answer: "652", image: manggaanswer, correct: false },
         ],
       },
       {
         id: 2,
-        question: "Pangatlung imahi",
+        question: "Pilan lareng watermelon keng imahi",
         image: imagethree,
         answers: [
-          { answer: "531", correct: false },
-          { answer: "552", correct: false },
-          { answer: "567", correct: false },
-          { answer: "523", correct: true },
+          {
+            answer: "531",
+            image: watermelon,
+
+            image: watermelon,
+            correct: false,
+          },
+          { answer: "552", image: watermelon, correct: false },
+          { answer: "567", image: watermelon, correct: false },
+          { answer: "523", image: watermelon, correct: true },
         ],
       },
       {
         id: 3,
-        question: "Pangapat a imahi",
+        question: "Pilan lareng Orange keng imahi",
         image: imagefour,
         answers: [
-          { answer: "531", correct: false },
-          { answer: "514", correct: true },
-          { answer: "553", correct: false },
-          { answer: "515", correct: false },
+          { answer: "531", image: orange, correct: false },
+          { answer: "514", image: orange, correct: true },
+          { answer: "553", image: orange, correct: false },
+          { answer: "515", image: orange, correct: false },
         ],
       },
       {
         id: 4,
-        question: "Panglimang imahi",
+        question: "Pilan la reng kamatis keng imahi",
         image: imagefive,
         answers: [
-          { answer: "555", correct: false },
-          { answer: "531", correct: false },
-          { answer: "565", correct: true },
-          { answer: "556", correct: false },
+          { answer: "555", image: totmato, correct: false },
+          { answer: "531", image: totmato, correct: false },
+          { answer: "565", image: totmato, correct: true },
+          { answer: "556", image: totmato, correct: false },
         ],
       },
     ],
@@ -93,7 +115,7 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
-        question: "Nanu ya ing place value na ning 1 keng217",
+        question: "Nanu ya ing place value na ning 1 keng 217",
         image: ones,
         answers: [
           { answer: "ones", correct: false },
@@ -124,8 +146,6 @@ export const mainMenu = [
           { answer: "thousands", correct: false },
         ],
       },
-      { id: 3, question: "Question 4", answers: [] },
-      { id: 4, question: "Question 5", answers: [] },
     ],
   },
   {
@@ -292,10 +312,10 @@ export const mainMenu = [
           "Addition sentences. Basan at pakibatan ing kutang. Ating 18 lalaki ampong 21 a babai king klasi ng Mrs. Ruiz, pilan la ngan deng istudyanti ng Mrs. Ruiz?",
         image: groupofstudents,
         answers: [
-          { answer: "38", correct: false },
-          { answer: "39", correct: true },
-          { answer: "36", correct: false },
-          { answer: "37", correct: false },
+          { answer: "38", image: students, correct: false },
+          { answer: "39", image: students, correct: true },
+          { answer: "36", image: students, correct: false },
+          { answer: "37", image: students, correct: false },
         ],
       },
       {
@@ -304,15 +324,12 @@ export const mainMenu = [
           "Memupul yang mangga i Mang Erning king kayang mulahan, 44 lang ikwa na king metung mangga ampong 52 ketang metung. Pilan la eganagana ring mangga?",
         image: mangoes,
         answers: [
-          { answer: "92", correct: false },
-          { answer: "93", correct: false },
-          { answer: "96", correct: true },
-          { answer: "90", correct: false },
+          { answer: "92", image: manggaanswer, correct: false },
+          { answer: "93", image: manggaanswer, correct: false },
+          { answer: "96", image: manggaanswer, correct: true },
+          { answer: "90", image: manggaanswer, correct: false },
         ],
       },
-      { id: 2, question: "Question 3", answers: [] },
-      { id: 3, question: "Question 4", answers: [] },
-      { id: 4, question: "Question 5", answers: [] },
     ],
   },
   {
@@ -328,15 +345,22 @@ export const mainMenu = [
         answers: [
           {
             answer: "Pilan lang krayola deng seli nang Aling Joane?",
+            image: suppliesanswer,
             correct: false,
           },
-          { answer: "Magkanu ngan ing beyaran ng Aling Joane?", correct: true },
+          {
+            answer: "Magkanu ngan ing beyaran ng Aling Joane?",
+            image: suppliesanswer,
+            correct: true,
+          },
           {
             answer: "Magkanu ing krayolang seli nang Aling Joane?",
+            image: suppliesanswer,
             correct: false,
           },
           {
             answer: "Pilan la reng seli nang notebooks aling Joane?",
+            image: suppliesanswer,
             correct: false,
           },
         ],
@@ -349,18 +373,23 @@ export const mainMenu = [
         answers: [
           {
             answer: "240 notebooks, 125 ballpen ampo krayola, 750 diksyunaryu",
+            image: suppliesanswer,
             correct: true,
           },
           {
             answer: "250 notebooks, 126 ballpen ampo krayola, 670 diksyunaruyu",
+            image: suppliesanswer,
             correct: false,
           },
           {
             answer: "235 notebooks, 126 ballpen ampo krayola, 660 diksyunaryu",
+            image: suppliesanswer,
             correct: false,
           },
           {
             answer: "365 notebooks, 123 ballpen a mpo krayola, 530 diksyunaryu",
+
+            image: suppliesanswer,
             correct: false,
           },
         ],
@@ -369,18 +398,24 @@ export const mainMenu = [
         id: 2,
         question:
           "Basan yula at pakibatan ding kutang, tukyan yula ding steps king pamag analyze. Mumuna, Minta ya bookstore i Aling Joane banalang isaling gamit iskwela ring anak na, memayad yang P240.50 para karing notebooks, P125.50 para karing krayola at ballpen da, ampong P750.00 para karing diksyunaryu. Magkanu ngan ing beyaran ng Aling Joane? NANU YA ING OPERATION MEGAMIT?",
-        image: schoolsupplies,
+        image: operationn,
         answers: [
           {
             answer: "Addition Multiplication",
+            image: operationn,
             correct: false,
           },
           {
             answer: "Division Subtraction",
+            image: operationn,
             correct: false,
           },
-          { answer: "Addition Subtraction", correct: true },
-          { answer: "Multiplication Division", correct: false },
+          { answer: "Addition Subtraction", image: operationn, correct: true },
+          {
+            answer: "Multiplication Division",
+            image: operationn,
+            correct: false,
+          },
         ],
       },
       {
@@ -491,53 +526,53 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme. Pilan la pa ring mitragan karing tanaman? Nanu ya ing kutang keng abanggit a senaryu?",
+          "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme. Pilan la pa ring mitagan karing tanaman? NANU YA ING KUTANG",
+        image: tomato,
         answers: [
           {
-            answer:
-              "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme.",
+            answer: "Pilan la ring kamatis king mula ng Tang Rally?",
             correct: false,
           },
           {
-            answer: "Mesira la ring 109 pauli na ning bagyung Igme",
+            answer: "Pilan la reng mesira?",
             correct: false,
           },
           {
-            answer: "Pilan la pa ring mitragan karing tanaman??",
+            answer: "Pilan la pa ring mitragan karing tanaman?",
             correct: true,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          { answer: "Nanu ya lagyu ing mananaman?", correct: false },
         ],
       },
       {
         id: 1,
         question:
-          "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme. Pilan la pa ring mitragan karing tanaman? Nanu ya ing kutang keng abanggit a senaryu? Nanu ya ing Given keng milabas a senaryu?",
+          "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme. Pilan la pa ring mitragan karing tanaman? Nanu ya ing kutang keng abanggit a senaryu? NANU YA ING GIVEN",
+        image: tomato,
         answers: [
           {
-            answer:
-              "Ating 312 tanamang kamatis king mula ng Tang Rally. Mesira la ring 109 pauli na ning bagyung Igme.",
+            answer: "109 mesira, 312 kamatis",
             correct: true,
           },
           {
-            answer: "Mesira la ring 109 pauli na ning bagyung Igme",
+            answer: "110 mesira, 320 kamatis",
             correct: false,
           },
           {
-            answer: "Pilan la pa ring mitragan karing tanaman?",
+            answer: "190  mesira, 320 kamatis",
             correct: false,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          { answer: "234 mesira, 320 kamatis", correct: false },
         ],
       },
       {
         id: 2,
         question:
-          "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda. Magkanu ing  mibye sukli kaya? Nanu ing kutang keng senaryu.",
+          "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda. Magkanu ing  mibye sukli kaya? NANU YA ING KUTANG",
+        image: balls,
         answers: [
           {
-            answer:
-              "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda",
+            answer: "Ninu ing sinaling bola?",
             correct: false,
           },
           {
@@ -545,31 +580,32 @@ export const mainMenu = [
             correct: true,
           },
           {
-            answer: " Memye yang P500.00 king magtinda",
+            answer: "Magkanu ing binayad na?",
             correct: false,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          { answer: "Pilan lareng bolang seli na?", correct: false },
         ],
       },
       {
         id: 3,
         question:
-          "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda. Magkanu ing  mibye sukli kaya? Nanu ing kutang keng senaryu. Nanu ya ing Given keng senaryu",
+          "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda. Magkanu ing  mibye sukli kaya? Nanu ing kutang keng senaryu. NANU YA ING GIVEN",
+        image: balls,
+
         answers: [
           {
-            answer:
-              "Sinali yang bola i Joel a P345.00. Memye yang P500.00 king magtinda",
-            correct: false,
-          },
-          {
-            answer: "Magkanu ing  mibye sukli kaya?",
+            answer: "P345.00 Bola, P500.00 Pera nang joel",
             correct: true,
           },
           {
-            answer: " Memye yang P500.00 king magtinda",
+            answer: "P335.00 Bola, P450.00 Pera nang joel",
             correct: false,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          {
+            answer: "P325.00 Bola, P550.00 Pera nang joel",
+            correct: false,
+          },
+          { answer: "P340.00 Bola, P505.00 Pera nang joel", correct: false },
         ],
       },
       { id: 4, question: "Question 5", answers: [] },
@@ -583,6 +619,7 @@ export const mainMenu = [
         id: 0,
         question:
           "Question 1: Atin yang P129.00 i Randy king pitaka na. Sinali yang lapis a P7.00. Magkanu la pa ring mitagan karing pera na?",
+        image: wallet,
         answers: [
           { answer: "P122.00", correct: true },
           { answer: "P127.00", correct: false },
@@ -595,6 +632,7 @@ export const mainMenu = [
         id: 1,
         question:
           "Question 2: Mekatipun yang 236 a straw i Adela a gamitan na king pamangawa king proyektu na. Kareti, ating 4 a straw a kule gintu. Pilan la ring straw a e kule gintu",
+        image: straw,
         answers: [
           { answer: "P233.00", correct: false },
           { answer: "P232.00", correct: true },
@@ -607,6 +645,7 @@ export const mainMenu = [
         id: 2,
         question:
           "Question 3: Atin yang P255.00 i Mrs. Cadiang king pitaka na sinali yang manuk a P145.00. Magkanu po ing mitagan karing pera na?",
+        image: wallet,
         answers: [
           { answer: "P115.00", correct: false },
           { answer: "P116.00", correct: false },
@@ -619,6 +658,7 @@ export const mainMenu = [
         id: 3,
         question:
           "Question 4: Karing  456 ng magaral ning San Vicene Elementary School. ding 205 lalaki la. Pilan la renng babai karing mag aral?",
+        image: groupofstudents,
         answers: [
           { answer: "P255.00", correct: false },
           { answer: "P253.00", correct: false },
@@ -630,12 +670,13 @@ export const mainMenu = [
       {
         id: 4,
         question:
-          "Question 5: Mekapamulut yang 218 maputing batu i angel. Kareti, ding 126 mangalati lang mabayat at ding aliwa mangayan no ngan. Pilan la karing batung ikwa na ring mayan? Nanu ya ing sagut?",
+          "Question 5: Mekapamulut yang 218 maputing batu i Angel. Kareti, ding 126 mangalati lang mabayat at ding aliwa mangayan no ngan. Pilan la karing batung ikwa na ring mayan? Nanu ya ing sagut?",
+        image: stones,
         answers: [
-          { answer: "P90.00", correct: false },
-          { answer: "P92.00", correct: true },
-          { answer: "P64.00", correct: false },
-          { answer: "P91.00", correct: false },
+          { answer: "90.00", correct: false },
+          { answer: "92.00", correct: true },
+          { answer: "64.00", correct: false },
+          { answer: "91.00", correct: false },
           ,
         ],
       },
@@ -648,82 +689,100 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum. nung atin ya mung P500.00. Magkanu pa ing mitagan karing pera na?",
-        type: "Nanu ya ing Given",
+          "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum. nung atin ya mung P500.00. Magkanu pa ing mitagan karing pera na? NANU YA ING GIVEN",
+        image: bills,
         answers: [
           {
             answer:
-              "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum",
+              "P256.00 para keng kuryenti, P170.00 para keng danum, P500.00 ing pera nang Dang Gloria",
             correct: true,
           },
-          { answer: "nung atin ya mung P500.00", correct: false },
-          { answer: "Magkanu pa ing mitagan karing pera na?", correct: false },
-          { answer: "Addition, Subtraction", correct: false },
+          {
+            answer:
+              "P250.00 para keng kuryenti, P180.00 para keng danum, P400.00 ing pera nang Dang Gloria",
+            correct: false,
+          },
+          {
+            answer:
+              "P226.00 para keng kuryenti, P190.00 para keng danum, P550.00 ing pera nang Dang Gloria",
+            correct: false,
+          },
+          {
+            answer:
+              "P216.00 para keng kuryenti, P120.00 para keng danum, P590.00 ing pera nang Dang Gloria",
+            correct: false,
+          },
         ],
       },
       {
         id: 1,
         question:
-          "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum. nung atin ya mung P500.00. Magkanu pa ing mitagan karing pera na?",
-        type: "Nanu ya ing kutang",
+          "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum. nung atin ya mung P500.00. Magkanu pa ing mitagan karing pera na? NANU YA ING KUTANG",
+        image: bills,
         answers: [
           {
-            answer:
-              "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum",
+            answer: "Magkanu ing kuryenti da ri Dang Gloria",
             correct: false,
           },
-          { answer: "nung atin ya mung P500.00", correct: false },
+          { answer: "Magkanu ya ing keng danum?", correct: false },
           { answer: "Magkanu pa ing mitagan karing pera na?", correct: true },
-          { answer: "Addition, Subtraction", correct: false },
+          {
+            answer: "Magkanu ngan ing binayad nang Dang Gloria",
+            correct: false,
+          },
         ],
       },
       {
         id: 2,
-        question: "Question 3",
-        type: "Operation a ginamit",
+        question:
+          "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum. nung atin ya mung P500.00. Magkanu pa ing mitagan karing pera na? NANU YA ING OPERATION MEGAMIT",
+        image: bills,
         answers: [
           {
-            answer:
-              "Memayad yang P256.00 i Dang Gloria para king kuryenti ampong P170.00 para king danum",
+            answer: "Addition, Multiplication",
             correct: false,
           },
-          { answer: "nung atin ya mung P500.00", correct: false },
-          { answer: "Magkanu pa ing mitagan karing pera na?", correct: false },
+          { answer: "Subtraction, Multiplication", correct: false },
+          { answer: "Multiplication, Division", correct: false },
           { answer: "Addition, Subtraction", correct: true },
         ],
       },
       {
         id: 3,
         question:
-          "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la. Pilan la ngan ding maputi karing eganaganang papil?",
-        type: "GIVEN",
+          "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la. Pilan la ngan ding maputi karing eganaganang papil? NANU YA ING GIVEN",
+        image: papers,
         answers: [
           {
             answer:
-              "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la",
+              "615 gamit a papil, 200 kule brown, 62 lareng dilo, maputi ing metagan",
             correct: true,
           },
           {
-            answer: "Pilan la ngan ding maputi karing eganaganang papil?",
+            answer:
+              "610 gamit a papil, 220 kule brown, 60 lareng dilo, maputi ing metagan",
             correct: false,
           },
           {
             answer:
-              "Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la",
+              "620 gamit a papil, 240 kule brown, 61 lareng dilo, maputi ing metagan",
             correct: false,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          {
+            answer:
+              "611 gamit a papil, 205 kule brown, 64 lareng dilo, maputi ing metagan",
+            correct: false,
+          },
         ],
       },
       {
         id: 4,
         question:
-          "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la. Pilan la ngan ding maputi karing eganaganang papil?",
-        type: "KUTANG",
+          "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la. Pilan la ngan ding maputi karing eganaganang papil? NANU YA ING KUTANG",
+        image: papers,
         answers: [
           {
-            answer:
-              "Mekatipun yang 615 a gamit a papil i Mrs. Medina. Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la",
+            answer: "Pilan la reng kule brown kareng papil",
             correct: false,
           },
           {
@@ -731,11 +790,10 @@ export const mainMenu = [
             correct: true,
           },
           {
-            answer:
-              "Ding 200 kareti kule lang brown, ding 62 dilo la, at ding aliwa maputi la",
+            answer: "Pilan la ngan deng kule dilo?",
             correct: false,
           },
-          { answer: "Addition, Subtraction", correct: false },
+          { answer: "Pilan la ngan deng krayola?", correct: false },
         ],
       },
     ],

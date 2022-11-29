@@ -53,7 +53,13 @@
 .image {
   position: center;
 }
+.image:hover {
+  position: center;
+
+  height: auto;
+}
 .answers-container {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -63,8 +69,8 @@
 
 .answer-button {
   background-color: aliceblue;
-  width: 30rem;
-  height: 15rem;
+  min-width: 20rem;
+  min-height: 15rem;
 }
 
 .answers-container :hover {
