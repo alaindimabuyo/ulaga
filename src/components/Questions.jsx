@@ -95,7 +95,8 @@ const Questions = (props) => {
           <div className="answers">
             <button
               className="answer-button"
-              onClick={() => alertMessage(answer.correct)}>
+              onClick={() => alertMessage(answer.correct)}
+            >
               <h3 className="answer-text">{answer.answer}</h3>
             </button>
           </div>
