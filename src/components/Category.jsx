@@ -10,7 +10,7 @@ export const Category = () => {
           <button onClick={() => {}}>
             <p key={category.id}>
               <Link to={`questions/${category.id}`}>
-                {category.id}. {category.category}
+                {category.id + 1}. {category.category}
               </Link>
             </p>
           </button>
