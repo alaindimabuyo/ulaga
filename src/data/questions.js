@@ -52,7 +52,9 @@ import equalsign from "../assets/equalsign.png";
 
 import ones from "../assets/ones.png";
 import numbers from "../assets/numbers.png";
-import greaterless from "../assets/greaterless.png";
+import greaterless1 from "../assets/greaterless1.png";
+import greaterless2 from "../assets/greaterless2.png";
+import greaterless3 from "../assets/greaterless3.png";
 import numbersforkids from "../assets/numberskids.png";
 import groupofstudents from "../assets/groupofstudents.png";
 import mangoes from "../assets/mangoes.png";
@@ -254,34 +256,37 @@ export const mainMenu = [
         id: 0,
 
         question:
-          "Basan at ukumpara la ring mitutuki. Isulat ing <,> o kaya = kareng pipag pilinan. Mumuna, Ing bulsa king istanti mikakaalaga yang P350.00 kabang itang pantalun P425.00. Ikumpara ing presyu ning bulsa king pantalun. P350.00 ___ P425.00",
-        image: greaterless,
+          "Basan at ukumpara la ring mitutuki. Pilinan ing <,> o kaya = kareng pipag pilinan. Mumuna, Ing bulsa king istanti mikakaalaga yang P350.00 kabang itang pantalun P425.00. Ikumpara ing presyu ning bulsa king pantalun. P350.00 ___ P425.00",
+        image: greaterless1,
         answers: [
           { answer: "<", correct: true },
           { answer: ">", correct: false },
           { answer: "=", correct: false },
+          { answer: "Alang sagut", correct: false },
         ],
       },
       {
         id: 1,
         question:
           "Pangadwa, Magobra la ri arnold at Leny king pabrika. Tatanggap yang P380.00 balang aldo i Arnold. Tatatnggap neng manng P P365.00 balang aldo i Leny. Ikumapara la ring sweldu ra ring adwang magobra. P380 ___ P365",
-        image: greaterless,
+        image: greaterless2,
         answers: [
           { answer: "<", correct: false },
           { answer: ">", correct: true },
           { answer: "=", correct: false },
+          { answer: "Alang sagut", correct: false },
         ],
       },
       {
         id: 2,
         question:
           "Pangatlu, Pinupul yang 215 kaban a pale i Tang Ado. Pinupul ya namang 215 kaban a pale i Tang Kiku. Ikumpara la ding bilang ding pupul dang kaban a pupul. 215 ___ 215",
-        image: greaterless,
+        image: greaterless3,
         answers: [
           { answer: "<", correct: false },
           { answer: ">", correct: false },
           { answer: "=", correct: true },
+          { answer: "Alang sagut", correct: false },
         ],
       },
     ],
