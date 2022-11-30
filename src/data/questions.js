@@ -3,6 +3,7 @@ import imagetwoonetwo from "../assets/image21_2.png";
 import imagetwoonethree from "../assets/image21_3.png";
 import imagetwoonefour from "../assets/image21_4.png";
 import imagetwoonefive from "../assets/image21_5.png";
+
 import imageoneeightone from "../assets/image18_1.png";
 import imageoneeighttwo from "../assets/image18_2.png";
 import imageoneeightthree from "../assets/image18_3.png";
@@ -43,6 +44,11 @@ import eggpie from "../assets/eggpie.png";
 import bibingka from "../assets/bibingka.png";
 import rope from "../assets/rope.png";
 import wood from "../assets/wood.png";
+import graphtwotwo from "../assets/graphtwotwo.png";
+
+import greaterthangator from "../assets/greaterthangator.png";
+import lessthangator from "../assets/lessthangator.png";
+import equalsign from "../assets/equalsign.png";
 
 import ones from "../assets/ones.png";
 import numbers from "../assets/numbers.png";
@@ -895,18 +901,18 @@ export const mainMenu = [
         question:
           "Mekarakap yang 132 asan i Mang Nardo. Ding 56 hitu la, ding 48 bulig la, at ding mitagan bangus la. Pilan la ngan ding bangus a arakap na? Nanung la reng OPERATION a ginamit?",
         answers: [
-          { answer: "ADDITION ampo SUBTRACTION", image: true, correct: true },
+          { answer: "ADDITION ampo SUBTRACTION", image: false, correct: true },
           {
             answer: "MULTIPLICATION ampo DIVISION",
-            image: true,
+            image: false,
             correct: false,
           },
           {
             answer: "SUBTRACTION ampo MULTIPLICATION",
-            image: true,
+            image: false,
             correct: false,
           },
-          { answer: "DIVISION ampo ADDITION", image: true, correct: false },
+          { answer: "DIVISION ampo ADDITION", image: false, correct: false },
         ],
       },
       {
@@ -1702,10 +1708,10 @@ export const mainMenu = [
           "Lawen yu la ding fractions ampong pipagkumparan la gamit ding simbulung: >, <, =.",
         image: imageoneeightone,
         answers: [
-          { answer: ">", image: true, correct: true },
-          { answer: "<", image: true, correct: false },
-          { answer: "=", image: true, correct: false },
-          { answer: "alang sagut", image: true, correct: false },
+          { answer: ">", image: greaterthangator, correct: true },
+          { answer: "<", image: lessthangator, correct: false },
+          { answer: "=", image: equalsign, correct: false },
+          { answer: "alang sagut", image: false, correct: false },
         ],
       },
       {
@@ -1714,10 +1720,10 @@ export const mainMenu = [
           "Lawen yu la ding fractions ampong pipagkumparan la gamit ding simbulung: >, <, =.",
         image: imageoneeighttwo,
         answers: [
-          { answer: ">", image: true, correct: false },
-          { answer: "<", image: true, correct: true },
-          { answer: "=", image: true, correct: false },
-          { answer: "alang sagut", image: true, correct: false },
+          { answer: ">", image: greaterthangator, correct: false },
+          { answer: "<", image: lessthangator, correct: true },
+          { answer: "=", image: equalsign, correct: false },
+          { answer: "alang sagut", image: false, correct: false },
         ],
       },
       {
@@ -1726,10 +1732,10 @@ export const mainMenu = [
           "Pilinan ing sagut ding fractions da ring drawing ampong pipagkumparan gamit ding >, <, =.",
         image: imageoneeightthree,
         answers: [
-          { answer: ">", image: true, correct: false },
-          { answer: "<", image: true, correct: true },
-          { answer: "=", image: true, correct: false },
-          { answer: "alang sagut", image: true, correct: false },
+          { answer: ">", image: greaterthangator, correct: false },
+          { answer: "<", image: lessthangator, correct: true },
+          { answer: "=", image: equalsign, correct: false },
+          { answer: "alang sagut", image: false, correct: false },
         ],
       },
       {
@@ -1738,10 +1744,10 @@ export const mainMenu = [
           "Pilinan ing sagut ding fractions da ring drawing ampong pipagkumparan gamit ding >, <, =.",
         image: imageoneeightfour,
         answers: [
-          { answer: ">", image: true, correct: true },
-          { answer: "<", image: true, correct: false },
-          { answer: "=", image: true, correct: false },
-          { answer: "alang sagut", image: true, correct: false },
+          { answer: ">", image: greaterthangator, correct: true },
+          { answer: "<", image: lessthangator, correct: false },
+          { answer: "=", image: equalsign, correct: false },
+          { answer: "alang sagut", image: false, correct: false },
         ],
       },
       {
@@ -1750,10 +1756,10 @@ export const mainMenu = [
           "Pilinan ing sagut ding fractions da ring drawing ampong pipagkumparan gamit ding >, <, =.",
         image: imageoneeightfive,
         answers: [
-          { answer: ">", image: true, correct: false },
-          { answer: "<", image: true, correct: true },
-          { answer: "=", image: true, correct: false },
-          { answer: "alang sagut", image: true, correct: false },
+          { answer: ">", image: greaterthangator, correct: false },
+          { answer: "<", image: lessthangator, correct: true },
+          { answer: "=", image: equalsign, correct: false },
+          { answer: "alang sagut", image: false, correct: false },
         ],
       },
     ],
@@ -1920,7 +1926,7 @@ export const mainMenu = [
       {
         id: 0,
         question: "Nanu ya pamagat ing graph?",
-        //image: graphtwotwo,
+        image: graphtwotwo,
         answers: [
           { answer: "Tau king iskwela", image: false, correct: false },
           { answer: "Tanaman king iskwela", image: false, correct: true },
@@ -1932,7 +1938,7 @@ export const mainMenu = [
         id: 1,
         question:
           "Pilan tanaman ing katumbas ning balang metung litratung tanaman?",
-        //image: graphtwotwo,
+        image: graphtwotwo,
         answers: [
           { answer: "Apat", image: false, correct: false },
           { answer: "Lima", image: false, correct: true },
@@ -1943,7 +1949,7 @@ export const mainMenu = [
       {
         id: 2,
         question: "Atin pilan king balang klasing tanaman?",
-        //image: graphtwotwo,
+        image: graphtwotwo,
         answers: [
           {
             answer:
@@ -1974,7 +1980,7 @@ export const mainMenu = [
       {
         id: 3,
         question: "Pilan lang klasing tanaman ding pisasabyan king graph?",
-        //image: graphtwotwo,
+        image: graphtwotwo,
         answers: [
           { answer: "Adwa lang klasing tanaman", image: false, correct: false },
           { answer: "Atlu lang klasing tanaman", image: false, correct: false },
