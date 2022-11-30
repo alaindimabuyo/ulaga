@@ -44,6 +44,9 @@ import eggpie from "../assets/eggpie.png";
 import bibingka from "../assets/bibingka.png";
 import rope from "../assets/rope.png";
 import wood from "../assets/wood.png";
+import row from "../assets/row.png";
+import tes from "../assets/tes.png";
+import fractions from "../assets/fractions.png";
 import graphtwotwo from "../assets/graphtwotwo.png";
 
 import greaterthangator from "../assets/greaterthangator.png";
@@ -1012,6 +1015,7 @@ export const mainMenu = [
       },
       {
         id: 1,
+        image: row,
         question:
           "King metung a klasi ating 8 row a maki 5 magaral Pilan la ngan ding magaral king klasi. Nanu ya ing KUTANG?",
         answers: [
@@ -1610,6 +1614,7 @@ export const mainMenu = [
       },
       {
         id: 4,
+        image: tes,
         question:
           "Atin yang 30 minutu I annie ban pakibatan ing tes na. Nung ing tes atin yang 10 kutang, pilan minutu ing dapat nang gamitan king balang kutang? Nanu ya ing NUMBER SENTENCE?",
         answers: [
@@ -1775,6 +1780,7 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
+        image: fractions,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1786,6 +1792,7 @@ export const mainMenu = [
       },
       {
         id: 1,
+        image: fractions,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1797,6 +1804,7 @@ export const mainMenu = [
       },
       {
         id: 2,
+        image: fractions,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1808,6 +1816,7 @@ export const mainMenu = [
       },
       {
         id: 3,
+        image: fractions,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1819,6 +1828,7 @@ export const mainMenu = [
       },
       {
         id: 4,
+        image: fractions,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
