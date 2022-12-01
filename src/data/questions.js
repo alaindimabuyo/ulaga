@@ -48,27 +48,34 @@ import row from "../assets/row.png";
 import tes from "../assets/tes.png";
 import fractions from "../assets/fractions.png";
 import graphtwotwo from "../assets/graphtwotwo.png";
-
+import walletone from "../assets/wallet1.png";
 import greaterthangator from "../assets/greaterthangator.png";
 import lessthangator from "../assets/lessthangator.png";
 import equalsign from "../assets/equalsign.png";
 
-import ones from "../assets/ones.png";
+import ones1 from "../assets/ones1.png";
+import ones2 from "../assets/ones2.png";
+import ones3 from "../assets/ones3.png";
 import numbers from "../assets/numbers.png";
 import greaterless1 from "../assets/greaterless1.png";
 import greaterless2 from "../assets/greaterless2.png";
 import greaterless3 from "../assets/greaterless3.png";
 import numbersforkids from "../assets/numberskids.png";
-import groupofstudents from "../assets/groupofstudents.png";
+
+import students1 from "../assets/students1.png";
 import mangoes from "../assets/mangoes.png";
 import schoolsupplies from "../assets/schoolsupplies.png";
 import markets from "../assets/markets.png";
-import operations from "../assets/operations.png";
+import operations1 from "../assets/operations1.png";
+import operations2 from "../assets/operations2.png";
+import operations3 from "../assets/operations3.png";
+import operations4 from "../assets/operations4.png";
+import operations5 from "../assets/operations5.png";
 import tomato from "../assets/tomato.png";
 import balls from "../assets/balls.png";
 import wallet from "../assets/wallet.png";
 import straw from "../assets/straw.png";
-import stones from "../assets/stones.png";
+import stone from "../assets/stone.png";
 import bills from "../assets/bills.png";
 import papers from "../assets/papers.png";
 import students from "../assets/students.png";
@@ -77,6 +84,7 @@ import manggaanswer from "../assets/manggaanswer.png";
 import operationn from "../assets/operationn.png";
 import watermelon from "../assets/watermelon.png";
 import apple from "../assets/apple.png";
+
 import orange from "../assets/orange.png";
 import totmato from "../assets/totmatoo.png";
 
@@ -89,7 +97,7 @@ export const mainMenu = [
         id: 0,
         image: imageone,
         question:
-          "Pilan la? Pilinan lareng numerung katumbas. Pilan la reng Apple atsu keng imahi",
+          "Pilan la? Pilinan lareng numerung katumbas. Pilan la reng Mansanas atsu keng imahi",
         answers: [
           { answer: "532", image: apple, correct: true },
           { answer: "531", image: apple, correct: false },
@@ -110,7 +118,7 @@ export const mainMenu = [
       },
       {
         id: 2,
-        question: "Pilan lareng watermelon keng imahi",
+        question: "Pilan lareng Pakwan keng imahi",
         image: imagethree,
         answers: [
           {
@@ -152,12 +160,11 @@ export const mainMenu = [
   {
     id: 1,
     category: "Give the place value of a digit",
-    image: ones,
     questions: [
       {
         id: 0,
         question: "Nanu ya ing place value na ning 1 keng 217",
-        image: ones,
+        image: ones1,
         answers: [
           { answer: "ones", correct: false },
           { answer: "tens", correct: true },
@@ -168,7 +175,7 @@ export const mainMenu = [
       {
         id: 1,
         question: "Nanu ya ing place value na ning 6 keng 346",
-        image: ones,
+        image: ones2,
         answers: [
           { answer: "ones", correct: true },
           { answer: "tens", correct: false },
@@ -179,7 +186,7 @@ export const mainMenu = [
       {
         id: 2,
         question: "Nanu ya ing place value na ning 7 keng 789",
-        image: ones,
+        image: ones3,
         answers: [
           { answer: "ones", correct: false },
           { answer: "tens", correct: false },
@@ -354,7 +361,7 @@ export const mainMenu = [
         id: 0,
         question:
           "Addition sentences. Basan at pakibatan ing kutang. Ating 18 lalaki ampong 21 a babai king klasi ng Mrs. Ruiz, pilan la ngan deng istudyanti ng Mrs. Ruiz?",
-        image: groupofstudents,
+        image: students1,
         answers: [
           { answer: "38", image: students, correct: false },
           { answer: "39", image: students, correct: true },
@@ -506,9 +513,8 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
-        question:
-          "Panintunan ya ing mawawalaang difference. Mumuna, 278 - 23 = ___",
-        image: operations,
+        question: "Panintunan ya ing mawawalaang difference",
+        image: operations1,
         answers: [
           { answer: "256", correct: false },
           { answer: "265", correct: false },
@@ -518,8 +524,8 @@ export const mainMenu = [
       },
       {
         id: 1,
-        question: "386 - 75 = ___",
-        image: operations,
+        question: "",
+        image: operations2,
         answers: [
           { answer: "311", correct: true },
           { answer: "310", correct: false },
@@ -530,8 +536,8 @@ export const mainMenu = [
       {
         id: 2,
 
-        question: "894 - 52 = ___",
-        image: operations,
+        question: "",
+        image: operations3,
         answers: [
           { answer: "841", correct: false },
           { answer: "833", correct: false },
@@ -541,8 +547,8 @@ export const mainMenu = [
       },
       {
         id: 3,
-        question: "159 - ___ = 45",
-        image: operations,
+        question: "",
+        image: operations4,
         answers: [
           { answer: "114", correct: true },
           { answer: "354", correct: false },
@@ -552,8 +558,8 @@ export const mainMenu = [
       },
       {
         id: 4,
-        question: "376 - ___ = 24",
-        image: operations,
+        question: "",
+        image: operations5,
         answers: [
           { answer: "352", correct: true },
           { answer: "333", correct: false },
@@ -689,7 +695,7 @@ export const mainMenu = [
         id: 2,
         question:
           "Question 3: Atin yang P255.00 i Mrs. Cadiang king pitaka na sinali yang manuk a P145.00. Magkanu po ing mitagan karing pera na?",
-        image: wallet,
+        image: walletone,
         answers: [
           { answer: "P115.00", correct: false },
           { answer: "P116.00", correct: false },
@@ -701,8 +707,8 @@ export const mainMenu = [
       {
         id: 3,
         question:
-          "Question 4: Karing  456 ng magaral ning San Vicene Elementary School. ding 205 lalaki la. Pilan la renng babai karing mag aral?",
-        image: groupofstudents,
+          "Question 4: Karing  456 ng magaral ning San Vicene Elementary School. ding 205 lalaki la. Pilan la reng babai karing mag aral?",
+        image: students,
         answers: [
           { answer: "P255.00", correct: false },
           { answer: "P253.00", correct: false },
@@ -715,7 +721,7 @@ export const mainMenu = [
         id: 4,
         question:
           "Question 5: Mekapamulut yang 218 maputing batu i Angel. Kareti, ding 126 mangalati lang mabayat at ding aliwa mangayan no ngan. Pilan la karing batung ikwa na ring mayan? Nanu ya ing sagut?",
-        image: stones,
+        image: stone,
         answers: [
           { answer: "90.00", correct: false },
           { answer: "92.00", correct: true },
