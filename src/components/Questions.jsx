@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { mainMenu } from "../data/questions";
 import { Outlet, Link } from "react-router-dom";
+import Modal from "./Modal";
 
 const Questions = (props) => {
   let { id } = useParams();
@@ -9,7 +10,10 @@ const Questions = (props) => {
   const [count, setCount] = React.useState(0);
   const [pageID, setPageID] = React.useState(Number(id));
   const intervalRef = useRef(null);
-  const [timer, setTimer] = React.useState("0");
+  const [timer, setTimer] = React.useState("05");
+  const [isModalOpen, setModalIsOpen] = useState(false);
+  const [isCorect, setIsCorrect] = useState(false);
+
   const getTimerRemaining = (endtime) => {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -25,6 +29,11 @@ const Questions = (props) => {
     };
   };
 
+  const toggleModal = (correct) => {
+    setModalIsOpen(!isModalOpen);
+    setIsCorrect(correct);
+  };
+
   const startTimer = (deadline) => {
     let { total, seconds } = getTimerRemaining(deadline);
     if (total >= 0) {
@@ -33,6 +42,7 @@ const Questions = (props) => {
       clearInterval(intervalRef.current);
     }
   };
+
   const clearTimer = (endtime) => {
     setTimer("5");
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -49,7 +59,7 @@ const Questions = (props) => {
     deadline.setSeconds(deadline.getSeconds() + 5);
     return deadline;
   };
-  console.log(timer);
+
   useEffect(() => {
     clearTimer(getDeadlineTime());
     return () => {
@@ -57,16 +67,15 @@ const Questions = (props) => {
     };
   }, []);
 
-  const setNextQuestion = () => {
+  const setNextQuestion = (questions) => {
     setTimer();
-    if (count < 4) {
+    if (count < questions.length) {
       setCount(count + 1);
     } else {
       setCount(0);
       setPageID(pageID + 1);
     }
   };
-  console.log("COUNTER", count, pageID);
 
   const alertMessage = (correct) => {
     if (correct === true) {
@@ -77,47 +86,51 @@ const Questions = (props) => {
   };
 
   return (
-    <div className="question-container">
-      <div className="timer">{timer}</div>
-
-      <div className="image">
-        <img
-          src={mainMenu[pageID].questions[count].image}
-          alt="Logo"
-          width={800}
-        />
+    <>
+      {isModalOpen && <Modal onRequestClose={toggleModal} correct={isCorect} />}
+      <div className="header-container">
+        <div className="image">
+          <Link to={`/`}>
+            <p style={{ color: "white" }}>Back to Categories</p>{" "}
+          </Link>
+        </div>
+        <div className="image">
+          <img
+            src={mainMenu[pageID].questions[count].image}
+            alt="Logo"
+            width={800}
+          />
+        </div>
+        <div className="timer image">{timer}</div>
       </div>
-      <div className="header">
-        <h3>{mainMenu[pageID].questions[count].question}</h3>
+      <div className="question-container">
+        <div className="header">
+          <h3>{mainMenu[pageID].questions[count].question}</h3>
+        </div>
+        <div className="answers-container">
+          {mainMenu[pageID].questions[count].answers.map((answer) => (
+            <div className="answers">
+              <button
+                className="answer-button"
+                onClick={() => toggleModal(answer.correct)}
+              >
+                {answer.image && (
+                  <img src={answer.image} alt="Logo" width={150} />
+                )}
+                <h3 className="answer-text">{answer.answer}</h3>
+              </button>
+            </div>
+          ))}
+        </div>
+        <div>
+          <button
+            onClick={() => setNextQuestion(mainMenu[pageID].questions[count])}
+          >
+            Submit
+          </button>
+        </div>
       </div>
-      <div className="answers-container">
-        {mainMenu[pageID].questions[count].answers.map((answer) => (
-          <div className="answers">
-            <button
-              className="answer-button"
-              onClick={() => alertMessage(answer.correct)}>
-              {answer.image && (
-                <img
-                  src={answer.image}
-                  alt="Logo"
-                  width={150}
-                />
-              )}
-              <h3 className="answer-text">{answer.answer}</h3>
-            </button>
-          </div>
-        ))}
-      </div>
-      <div>
-        <button onClick={() => setNextQuestion()}>Submit</button>
-      </div>
-
-      {/* {count === 5 && (
-        <Link to={`/`}>
-          <p>Back to Categories</p>{" "}
-        </Link>
-      )} */}
-    </div>
+    </>
   );
 };
 
