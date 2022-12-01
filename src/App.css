@@ -47,21 +47,14 @@
   justify-content: center;
   font-size: xx-large;
   line-height: 1;
-  color: #d27d2d;
+  color: #ffffff;
 }
 
 .question-container {
   display: flex;
   flex-direction: column;
 }
-.image {
-  position: center;
-}
-.image:hover {
-  position: center;
 
-  height: auto;
-}
 .answers-container {
   margin: auto;
   display: grid;
@@ -77,7 +70,7 @@
   min-height: 15rem;
 }
 
-.answers-container :hover {
+.answers :hover {
   background-color: #ffbd35;
 }
 
@@ -87,10 +80,55 @@
 }
 
 .timer {
-  text-align: end;
-  margin-left: 1500px;
   font-size: 50px;
 }
+
 .image {
-  position: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.modal__backdrop {
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.modal__container {
+  background: #fff;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  width: 560px;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+button {
+  background: #8c54ff;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  transition: transform 100ms ease-out;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

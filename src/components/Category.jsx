@@ -7,13 +7,13 @@ export const Category = () => {
       <h1>Choose a category</h1>
       {mainMenu.map((category) => (
         <div className="card">
-          <button onClick={() => {}}>
-            <p key={category.id}>
-              <Link to={`questions/${category.id}`}>
+          <Link to={`questions/${category.id}`}>
+            <button onClick={() => {}}>
+              <h5 key={category.id}>
                 {category.id + 1}. {category.category}
-              </Link>
-            </p>
-          </button>
+              </h5>
+            </button>
+          </Link>
         </div>
       ))}
     </>
