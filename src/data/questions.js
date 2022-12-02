@@ -57,11 +57,16 @@ import ones1 from "../assets/ones1.png";
 import ones2 from "../assets/ones2.png";
 import ones3 from "../assets/ones3.png";
 import numbers from "../assets/numbers.png";
+import numberstwo from "../assets/numberstwo.png";
+import numbersthree from "../assets/numbersthree.png";
+import numbersfour from "../assets/numbersfour.png";
+import numbersfive from "../assets/numbersfive.png";
 import greaterless1 from "../assets/greaterless1.png";
 import greaterless2 from "../assets/greaterless2.png";
 import greaterless3 from "../assets/greaterless3.png";
 import numbersforkids from "../assets/numberskids.png";
-
+import zz from "../assets/zz.png";
+import cc from "../assets/cc.png";
 import students1 from "../assets/students1.png";
 import mangoes from "../assets/mangoes.png";
 import schoolsupplies from "../assets/schoolsupplies.png";
@@ -204,7 +209,7 @@ export const mainMenu = [
       {
         id: 0,
         image: numbers,
-        question: "Kumpletwan la reng bilang. Mumuna ___, 125",
+        question: "Kumpletwan la reng bilang.  ___, 125",
         answers: [
           { answer: "123", correct: false },
           { answer: "122", correct: false },
@@ -214,8 +219,8 @@ export const mainMenu = [
       },
       {
         id: 1,
-        question: "Pangadwa ___, 146",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangadwa ___, 146",
+        image: numberstwo,
         answers: [
           { answer: "145", correct: true },
           { answer: "147", correct: false },
@@ -226,8 +231,8 @@ export const mainMenu = [
 
       {
         id: 2,
-        question: "Pangatlu 133, ___, 135",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangatlu 133, ___, 135",
+        image: numbersthree,
         answers: [
           { answer: "136", correct: false },
           { answer: "132", correct: false },
@@ -237,8 +242,8 @@ export const mainMenu = [
       },
       {
         id: 3,
-        question: "Pangapat 151, ___, 153",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangapat 151, ___, 153",
+        image: numbersfour,
         answers: [
           { answer: "155", correct: false },
           { answer: "152", correct: true },
@@ -248,8 +253,8 @@ export const mainMenu = [
       },
       {
         id: 4,
-        question: "Panglima 164, ___",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Panglima 164, ___",
+        image: numbersfive,
         answers: [
           { answer: "163", correct: false },
           { answer: "166", correct: false },
@@ -309,47 +314,51 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. Mumuna, 23 + 54 = 54 + 23",
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 23 + 54 = 54 + 23",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 1,
-        question: "120 + 0",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 120 + 0",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 2,
-        question: "0z + 57",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 0z + 57",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 3,
-        question: "20 + 6 = 6 + 20",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 20 + 6 = 6 + 20",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 4,
-        question: "15 + 3 = 18 18 = 3 + 15",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 15 + 3 = 18 18 = 3 + 15",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
     ],
@@ -659,7 +668,6 @@ export const mainMenu = [
           { answer: "P340.00 Bola, P505.00 Pera nang joel", correct: false },
         ],
       },
-      { id: 4, question: "Question 5", answers: [] },
     ],
   },
   {
