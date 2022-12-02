@@ -46,12 +46,18 @@ import rope from "../assets/rope.png";
 import wood from "../assets/wood.png";
 import row from "../assets/row.png";
 import tes from "../assets/tes.png";
-import fractions from "../assets/fractions.png";
+import fractions1 from "../assets/fractions1.png";
+import fractions2 from "../assets/fractions2.png";
+import fractions3 from "../assets/fractions3.png";
+import fractions4 from "../assets/fractions4.png";
+import fractions5 from "../assets/fractions5.png";
 import graphtwotwo from "../assets/graphtwotwo.png";
 import walletone from "../assets/wallet1.png";
 import greaterthangator from "../assets/greaterthangator.png";
 import lessthangator from "../assets/lessthangator.png";
 import equalsign from "../assets/equalsign.png";
+import grid from "../assets/grid.png";
+import tablecloth from "../assets/tablecloth.png";
 
 import ones1 from "../assets/ones1.png";
 import ones2 from "../assets/ones2.png";
@@ -1786,7 +1792,7 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
-        image: fractions,
+        image: fractions1,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1798,7 +1804,7 @@ export const mainMenu = [
       },
       {
         id: 1,
-        image: fractions,
+        image: fractions2,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1810,7 +1816,7 @@ export const mainMenu = [
       },
       {
         id: 2,
-        image: fractions,
+        image: fractions3,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1822,7 +1828,7 @@ export const mainMenu = [
       },
       {
         id: 3,
-        image: fractions,
+        image: fractions4,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1834,7 +1840,7 @@ export const mainMenu = [
       },
       {
         id: 4,
-        image: fractions,
+        image: fractions5,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1918,8 +1924,9 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
+        image: grid,
         question:
-          "Atin yang rektanggulung gid paper I Chona. Ing lapad na 8 square units ya, at ing kaba na 23 square units ya. Pilan la ngan ding square units na ning grid paper na?",
+          "Atin yang rektanggulung grid paper I Chona. Ing lapad na 8 square units ya, at ing kaba na 23 square units ya. Pilan la ngan ding square units na ning grid paper na?",
         answers: [
           { answer: "8 square units", image: false, correct: false },
           { answer: "23 square units", image: false, correct: false },
@@ -1929,6 +1936,7 @@ export const mainMenu = [
       },
       {
         id: 1,
+        image: tablecloth,
         question:
           "Ing takap ng lamesang Aling Flor ating yang 4 square units king metung a gilid ampong 4 mu rin king metung pang gilid. Pilan la ngan ding square units ning takap lamesa?",
         answers: [
