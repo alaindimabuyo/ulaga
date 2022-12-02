@@ -10,7 +10,7 @@ const Questions = (props) => {
   const [count, setCount] = React.useState(0);
   const [pageID, setPageID] = React.useState(Number(id));
   const [isModalOpen, setModalIsOpen] = useState(false);
-  const [isCorect, setIsCorrect] = useState(false);
+  const [isCorect, setIsCorrect] = useState(null);
 
   const [timeLeft, setTimeLeft] = useState(30);
 
@@ -20,34 +20,50 @@ const Questions = (props) => {
   };
 
   useEffect(() => {
+    if (timeLeft === 0) {
+      toggleModal(
+        mainMenu[pageID].questions[count].answers.find(
+          (el) => el.correct === true
+        )
+      );
+    }
     if (!timeLeft) return;
 
     const intervalId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
     }, 1000);
 
-    // clear interval on re-render to avoid memory leaks
     return () => clearInterval(intervalId);
   }, [timeLeft]);
-
-  // useEffect(() => {
-  //   if
-  // },[])
-  const setNextQuestion = (questions) => {
+  console.log();
+  const setNextQuestion = () => {
     setCount(count + 1);
-    console.log("qUESTIONS", questions.length - 1, count);
-    if (questions.length - 1 === count) {
+    setTimeLeft(30);
+    if (mainMenu[pageID].questions.length - 1 === count) {
       setCount(0);
       setPageID(pageID + 1);
     }
   };
 
+  console.log(!mainMenu[pageID]);
+
+  if (!mainMenu[pageID]) {
+    return (
+      <div>
+        <h1>THE END</h1>
+        <Link to={`/`}>
+          <p style={{ color: "white" }}>Back to Categories</p>{" "}
+        </Link>
+      </div>
+    );
+  }
   return (
     <>
       {isModalOpen && (
         <Modal
           onRequestClose={toggleModal}
           correct={isCorect}
+          setNextQuestion={setNextQuestion}
         />
       )}
       <div className="header-container">
@@ -67,20 +83,19 @@ const Questions = (props) => {
       </div>
       <div className="question-container">
         <div className="header">
-          <h3>{mainMenu[pageID].questions[count].question}</h3>
+          <h3 style={{ lineHeight: "50px" }}>
+            {mainMenu[pageID].questions[count].question}
+          </h3>
         </div>
         <div className="answers-container">
           {mainMenu[pageID].questions[count].answers.map((answer) => (
             <div className="answers">
               <button
                 className="answer-button"
-                onClick={() => toggleModal(answer.correct)}>
+                onClick={() => toggleModal(answer)}
+              >
                 {answer.image && (
-                  <img
-                    src={answer.image}
-                    alt="Logo"
-                    width={150}
-                  />
+                  <img src={answer.image} alt="Logo" width={150} />
                 )}
                 <h3 className="answer-text">{answer.answer}</h3>
               </button>
@@ -88,9 +103,7 @@ const Questions = (props) => {
           ))}
         </div>
         <div>
-          <button onClick={() => setNextQuestion(mainMenu[pageID].questions)}>
-            Submit
-          </button>
+          <button onClick={() => setNextQuestion()}>Submit</button>
         </div>
       </div>
     </>
