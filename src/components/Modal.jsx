@@ -1,12 +1,18 @@
 import React, { useEffect } from "react";
 
-const Modal = ({ onRequestClose, correct }) => {
+const Modal = ({ onRequestClose, correct, setNextQuestion }) => {
   console.log(correct);
+
+  const closeModal = () => {
+    onRequestClose();
+    setNextQuestion();
+  };
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.keyCode === 27) {
         // Close the modal when the Escape key is pressed
         onRequestClose();
+        setNextQuestion();
       }
     };
 
@@ -24,14 +30,15 @@ const Modal = ({ onRequestClose, correct }) => {
     <div className="modal__backdrop">
       <div className="modal__container">
         <h3 className="modal__title">I'm a modal!</h3>
-        {correct && <p style={{ color: "black" }}>Correct</p>}
+        {correct.correct && (
+          <div>
+            <h2 style={{ color: "black" }}>Correct answer</h2>
+            <h2 style={{ color: "black" }}>{correct.answer}</h2>
+          </div>
+        )}
 
-        {!correct && <p style={{ color: "black" }}>Wrong</p>}
-        <button
-          type="button"
-          onClick={onRequestClose}
-          style={{ width: "300px" }}
-        >
+        {!correct.correct && <h2 style={{ color: "black" }}>Wrong</h2>}
+        <button type="button" onClick={closeModal} style={{ width: "300px" }}>
           Close
         </button>
         <div className="placeholder" />

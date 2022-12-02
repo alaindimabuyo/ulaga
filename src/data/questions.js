@@ -658,7 +658,6 @@ export const mainMenu = [
           { answer: "P340.00 Bola, P505.00 Pera nang joel", correct: false },
         ],
       },
-      { id: 4, question: "Question 5", answers: [] },
     ],
   },
   {

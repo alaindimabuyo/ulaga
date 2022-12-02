@@ -10,9 +10,9 @@ const Questions = (props) => {
   const [count, setCount] = React.useState(0);
   const [pageID, setPageID] = React.useState(Number(id));
   const [isModalOpen, setModalIsOpen] = useState(false);
-  const [isCorect, setIsCorrect] = useState(false);
+  const [isCorect, setIsCorrect] = useState(null);
 
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(5);
 
   const toggleModal = (correct) => {
     setModalIsOpen(!isModalOpen);
@@ -20,23 +20,26 @@ const Questions = (props) => {
   };
 
   useEffect(() => {
+    if (timeLeft === 0) {
+      toggleModal(
+        mainMenu[pageID].questions[count].answers.find(
+          (el) => el.correct === true
+        )
+      );
+    }
     if (!timeLeft) return;
 
     const intervalId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
     }, 1000);
 
-    // clear interval on re-render to avoid memory leaks
     return () => clearInterval(intervalId);
   }, [timeLeft]);
 
-  // useEffect(() => {
-  //   if
-  // },[])
-  const setNextQuestion = (questions) => {
+  const setNextQuestion = () => {
     setCount(count + 1);
-    console.log("qUESTIONS", questions.length - 1, count);
-    if (questions.length - 1 === count) {
+    setTimeLeft(5);
+    if (mainMenu[pageID].questions.length - 1 === count) {
       setCount(0);
       setPageID(pageID + 1);
     }
@@ -44,7 +47,13 @@ const Questions = (props) => {
 
   return (
     <>
-      {isModalOpen && <Modal onRequestClose={toggleModal} correct={isCorect} />}
+      {isModalOpen && (
+        <Modal
+          onRequestClose={toggleModal}
+          correct={isCorect}
+          setNextQuestion={setNextQuestion}
+        />
+      )}
       <div className="header-container">
         <div className="image">
           <Link to={`/`}>
@@ -69,7 +78,7 @@ const Questions = (props) => {
             <div className="answers">
               <button
                 className="answer-button"
-                onClick={() => toggleModal(answer.correct)}
+                onClick={() => toggleModal(answer)}
               >
                 {answer.image && (
                   <img src={answer.image} alt="Logo" width={150} />
@@ -80,9 +89,7 @@ const Questions = (props) => {
           ))}
         </div>
         <div>
-          <button onClick={() => setNextQuestion(mainMenu[pageID].questions)}>
-            Submit
-          </button>
+          <button onClick={() => setNextQuestion()}>Submit</button>
         </div>
       </div>
     </>
