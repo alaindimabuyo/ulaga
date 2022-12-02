@@ -57,7 +57,7 @@ import greaterthangator from "../assets/greaterthangator.png";
 import lessthangator from "../assets/lessthangator.png";
 import equalsign from "../assets/equalsign.png";
 import grid from "../assets/grid.png";
-import tableclothe from "../assets/tablecloth.png";
+import tablecloth from "../assets/tablecloth.png";
 
 import ones1 from "../assets/ones1.png";
 import ones2 from "../assets/ones2.png";
@@ -1945,7 +1945,7 @@ export const mainMenu = [
       },
       {
         id: 1,
-        image: tableclothe,
+        image: tablecloth,
         question:
           "Ing takap ng lamesang Aling Flor ating yang 4 square units king metung a gilid ampong 4 mu rin king metung pang gilid. Pilan la ngan ding square units ning takap lamesa?",
         answers: [
