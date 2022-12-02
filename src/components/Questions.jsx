@@ -12,7 +12,7 @@ const Questions = (props) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [isCorect, setIsCorrect] = useState(null);
 
-  const [timeLeft, setTimeLeft] = useState(5);
+  const [timeLeft, setTimeLeft] = useState(30);
 
   const toggleModal = (correct) => {
     setModalIsOpen(!isModalOpen);
@@ -35,16 +35,28 @@ const Questions = (props) => {
 
     return () => clearInterval(intervalId);
   }, [timeLeft]);
-
+  console.log();
   const setNextQuestion = () => {
     setCount(count + 1);
-    setTimeLeft(5);
+    setTimeLeft(30);
     if (mainMenu[pageID].questions.length - 1 === count) {
       setCount(0);
       setPageID(pageID + 1);
     }
   };
 
+  console.log(!mainMenu[pageID]);
+
+  if (!mainMenu[pageID]) {
+    return (
+      <div>
+        <h1>THE END</h1>
+        <Link to={`/`}>
+          <p style={{ color: "white" }}>Back to Categories</p>{" "}
+        </Link>
+      </div>
+    );
+  }
   return (
     <>
       {isModalOpen && (
@@ -71,7 +83,9 @@ const Questions = (props) => {
       </div>
       <div className="question-container">
         <div className="header">
-          <h3>{mainMenu[pageID].questions[count].question}</h3>
+          <h3 style={{ lineHeight: "50px" }}>
+            {mainMenu[pageID].questions[count].question}
+          </h3>
         </div>
         <div className="answers-container">
           {mainMenu[pageID].questions[count].answers.map((answer) => (

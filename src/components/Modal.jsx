@@ -40,7 +40,7 @@ const Modal = ({ onRequestClose, correct, setNextQuestion }) => {
               <div className="img_container">
                 <img src={check} alt="" width={200} />
               </div>
-              ISTU YA!
+              ISTUNG SAGUT
             </h5>
             <h2 style={{ color: "black" }}>{correct.answer}</h2>
           </div>
