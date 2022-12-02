@@ -84,6 +84,7 @@ import manggaanswer from "../assets/manggaanswer.png";
 import operationn from "../assets/operationn.png";
 import watermelon from "../assets/watermelon.png";
 import apple from "../assets/apple.png";
+import check from "../assets/check.png";
 
 import orange from "../assets/orange.png";
 import totmato from "../assets/totmatoo.png";

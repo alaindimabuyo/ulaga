@@ -87,7 +87,12 @@ const Questions = (props) => {
 
   return (
     <>
-      {isModalOpen && <Modal onRequestClose={toggleModal} correct={isCorect} />}
+      {isModalOpen && (
+        <Modal
+          onRequestClose={toggleModal}
+          correct={isCorect}
+        />
+      )}
       <div className="header-container">
         <div className="image">
           <Link to={`/`}>
@@ -112,10 +117,13 @@ const Questions = (props) => {
             <div className="answers">
               <button
                 className="answer-button"
-                onClick={() => toggleModal(answer.correct)}
-              >
+                onClick={() => toggleModal(answer.correct)}>
                 {answer.image && (
-                  <img src={answer.image} alt="Logo" width={150} />
+                  <img
+                    src={answer.image}
+                    alt="Logo"
+                    width={150}
+                  />
                 )}
                 <h3 className="answer-text">{answer.answer}</h3>
               </button>
@@ -124,8 +132,7 @@ const Questions = (props) => {
         </div>
         <div>
           <button
-            onClick={() => setNextQuestion(mainMenu[pageID].questions[count])}
-          >
+            onClick={() => setNextQuestion(mainMenu[pageID].questions[count])}>
             Submit
           </button>
         </div>

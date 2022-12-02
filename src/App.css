@@ -98,6 +98,11 @@
   top: 0;
   z-index: 1;
 }
+.correct {
+  text-align: center;
+  justify-content: center;
+  display: block;
+}
 
 .modal__container {
   background: #fff;
