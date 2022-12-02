@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import check from "../assets/check.png";
+import wrong from "../assets/wrong.png";
 
 const Modal = ({ onRequestClose, correct, setNextQuestion }) => {
   console.log(correct);
@@ -32,19 +34,29 @@ const Modal = ({ onRequestClose, correct, setNextQuestion }) => {
         <h3 className="modal__title">I'm a modal!</h3>
         {correct.correct && (
           <div>
-            <h2 style={{ color: "black" }}>Correct answer</h2>
+            <h5
+              style={{ color: "black", textAlign: "center", fontSize: "30px" }}
+            >
+              <div className="img_container">
+                <img src={check} alt="" width={200} />
+              </div>
+              ISTU YA!
+            </h5>
             <h2 style={{ color: "black" }}>{correct.answer}</h2>
           </div>
         )}
-
-        {!correct.correct && <h2 style={{ color: "black" }}>Wrong</h2>}
+        {!correct.correct && (
+          <h5 style={{ color: "black", textAlign: "center", fontSize: "30px" }}>
+            <div className="img_container">
+              <img src={wrong} alt="" width={200} />
+            </div>
+            MALI YA!
+          </h5>
+        )}
         <button type="button" onClick={closeModal} style={{ width: "300px" }}>
+          {" "}
           Close
         </button>
-        <div className="placeholder" />
-        <div className="placeholder" />
-        <div className="placeholder medium" />
-        <div className="placeholder" />
       </div>
     </div>
   );

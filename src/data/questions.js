@@ -46,22 +46,33 @@ import rope from "../assets/rope.png";
 import wood from "../assets/wood.png";
 import row from "../assets/row.png";
 import tes from "../assets/tes.png";
-import fractions from "../assets/fractions.png";
+import fractions1 from "../assets/fractions1.png";
+import fractions2 from "../assets/fractions2.png";
+import fractions3 from "../assets/fractions3.png";
+import fractions4 from "../assets/fractions4.png";
+import fractions5 from "../assets/fractions5.png";
 import graphtwotwo from "../assets/graphtwotwo.png";
 import walletone from "../assets/wallet1.png";
 import greaterthangator from "../assets/greaterthangator.png";
 import lessthangator from "../assets/lessthangator.png";
 import equalsign from "../assets/equalsign.png";
+import grid from "../assets/grid.png";
+import tablecloth from "../assets/tablecloth.png";
 
 import ones1 from "../assets/ones1.png";
 import ones2 from "../assets/ones2.png";
 import ones3 from "../assets/ones3.png";
 import numbers from "../assets/numbers.png";
+import numberstwo from "../assets/numberstwo.png";
+import numbersthree from "../assets/numbersthree.png";
+import numbersfour from "../assets/numbersfour.png";
+import numbersfive from "../assets/numbersfive.png";
 import greaterless1 from "../assets/greaterless1.png";
 import greaterless2 from "../assets/greaterless2.png";
 import greaterless3 from "../assets/greaterless3.png";
 import numbersforkids from "../assets/numberskids.png";
-
+import zz from "../assets/zz.png";
+import cc from "../assets/cc.png";
 import students1 from "../assets/students1.png";
 import mangoes from "../assets/mangoes.png";
 import schoolsupplies from "../assets/schoolsupplies.png";
@@ -84,6 +95,7 @@ import manggaanswer from "../assets/manggaanswer.png";
 import operationn from "../assets/operationn.png";
 import watermelon from "../assets/watermelon.png";
 import apple from "../assets/apple.png";
+import check from "../assets/check.png";
 
 import orange from "../assets/orange.png";
 import totmato from "../assets/totmatoo.png";
@@ -203,7 +215,7 @@ export const mainMenu = [
       {
         id: 0,
         image: numbers,
-        question: "Kumpletwan la reng bilang. Mumuna ___, 125",
+        question: "Kumpletwan la reng bilang.  ___, 125",
         answers: [
           { answer: "123", correct: false },
           { answer: "122", correct: false },
@@ -213,8 +225,8 @@ export const mainMenu = [
       },
       {
         id: 1,
-        question: "Pangadwa ___, 146",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangadwa ___, 146",
+        image: numberstwo,
         answers: [
           { answer: "145", correct: true },
           { answer: "147", correct: false },
@@ -225,8 +237,8 @@ export const mainMenu = [
 
       {
         id: 2,
-        question: "Pangatlu 133, ___, 135",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangatlu 133, ___, 135",
+        image: numbersthree,
         answers: [
           { answer: "136", correct: false },
           { answer: "132", correct: false },
@@ -236,8 +248,8 @@ export const mainMenu = [
       },
       {
         id: 3,
-        question: "Pangapat 151, ___, 153",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Pangapat 151, ___, 153",
+        image: numbersfour,
         answers: [
           { answer: "155", correct: false },
           { answer: "152", correct: true },
@@ -247,8 +259,8 @@ export const mainMenu = [
       },
       {
         id: 4,
-        question: "Panglima 164, ___",
-        image: numbers,
+        question: "Kumpletwan la reng bilang. Panglima 164, ___",
+        image: numbersfive,
         answers: [
           { answer: "163", correct: false },
           { answer: "166", correct: false },
@@ -308,47 +320,51 @@ export const mainMenu = [
       {
         id: 0,
         question:
-          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. Mumuna, 23 + 54 = 54 + 23",
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 23 + 54 = 54 + 23",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 1,
-        question: "120 + 0",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 120 + 0",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 2,
-        question: "0z + 57",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 0z + 57",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 3,
-        question: "20 + 6 = 6 + 20",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 20 + 6 = 6 + 20",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
       {
         id: 4,
-        question: "15 + 3 = 18 18 = 3 + 15",
+        question:
+          "Kilalanan la ring NUMBER OF SENTENCES, pilinan ya ing (z) nung Zero Property ya ampong (c) nung Commulative Property ya. 15 + 3 = 18 18 = 3 + 15",
         image: numbersforkids,
         answers: [
-          { answer: "Z", correct: false },
-          { answer: "C", correct: true },
+          { answer: "", image: zz, correct: false },
+          { answer: "", image: cc, correct: true },
         ],
       },
     ],
@@ -1785,7 +1801,7 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
-        image: fractions,
+        image: fractions1,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1797,7 +1813,7 @@ export const mainMenu = [
       },
       {
         id: 1,
-        image: fractions,
+        image: fractions2,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1809,7 +1825,7 @@ export const mainMenu = [
       },
       {
         id: 2,
-        image: fractions,
+        image: fractions3,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1821,7 +1837,7 @@ export const mainMenu = [
       },
       {
         id: 3,
-        image: fractions,
+        image: fractions4,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1833,7 +1849,7 @@ export const mainMenu = [
       },
       {
         id: 4,
-        image: fractions,
+        image: fractions5,
         question:
           "Lawen la ding equation, pilinan ing ustu a pamitukituki kareng fractions.",
         answers: [
@@ -1917,8 +1933,9 @@ export const mainMenu = [
     questions: [
       {
         id: 0,
+        image: grid,
         question:
-          "Atin yang rektanggulung gid paper I Chona. Ing lapad na 8 square units ya, at ing kaba na 23 square units ya. Pilan la ngan ding square units na ning grid paper na?",
+          "Atin yang rektanggulung grid paper I Chona. Ing lapad na 8 square units ya, at ing kaba na 23 square units ya. Pilan la ngan ding square units na ning grid paper na?",
         answers: [
           { answer: "8 square units", image: false, correct: false },
           { answer: "23 square units", image: false, correct: false },
@@ -1928,6 +1945,7 @@ export const mainMenu = [
       },
       {
         id: 1,
+        image: tablecloth,
         question:
           "Ing takap ng lamesang Aling Flor ating yang 4 square units king metung a gilid ampong 4 mu rin king metung pang gilid. Pilan la ngan ding square units ning takap lamesa?",
         answers: [
