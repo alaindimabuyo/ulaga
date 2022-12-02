@@ -9,79 +9,36 @@ const Questions = (props) => {
 
   const [count, setCount] = React.useState(0);
   const [pageID, setPageID] = React.useState(Number(id));
-  const intervalRef = useRef(null);
-  const [timer, setTimer] = React.useState("05");
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [isCorect, setIsCorrect] = useState(false);
 
-  const getTimerRemaining = (endtime) => {
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor(((total / 1000) * 60 * 60) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    return {
-      total,
-      days,
-      hours,
-      minutes,
-      seconds,
-    };
-  };
+  const [timeLeft, setTimeLeft] = useState(30);
 
   const toggleModal = (correct) => {
     setModalIsOpen(!isModalOpen);
     setIsCorrect(correct);
   };
 
-  const startTimer = (deadline) => {
-    let { total, seconds } = getTimerRemaining(deadline);
-    if (total >= 0) {
-      setTimer(seconds > 9 ? seconds : "0" + seconds);
-    } else {
-      clearInterval(intervalRef.current);
-    }
-  };
-
-  const clearTimer = (endtime) => {
-    setTimer("5");
-    if (intervalRef.current) clearInterval(intervalRef.current);
-
-    const id = setInterval(() => {
-      startTimer(endtime);
-    }, 1000);
-    intervalRef.current = id;
-  };
-
-  const getDeadlineTime = () => {
-    let deadline = new Date();
-
-    deadline.setSeconds(deadline.getSeconds() + 5);
-    return deadline;
-  };
-
   useEffect(() => {
-    clearTimer(getDeadlineTime());
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, []);
+    if (!timeLeft) return;
 
+    const intervalId = setInterval(() => {
+      setTimeLeft(timeLeft - 1);
+    }, 1000);
+
+    // clear interval on re-render to avoid memory leaks
+    return () => clearInterval(intervalId);
+  }, [timeLeft]);
+
+  // useEffect(() => {
+  //   if
+  // },[])
   const setNextQuestion = (questions) => {
-    setTimer();
-    if (count < questions.length) {
-      setCount(count + 1);
-    } else {
+    setCount(count + 1);
+    console.log("qUESTIONS", questions.length - 1, count);
+    if (questions.length - 1 === count) {
       setCount(0);
       setPageID(pageID + 1);
-    }
-  };
-
-  const alertMessage = (correct) => {
-    if (correct === true) {
-      alert("CORRECT!!");
-    } else {
-      alert("WRONG!!");
     }
   };
 
@@ -101,7 +58,7 @@ const Questions = (props) => {
             width={800}
           />
         </div>
-        <div className="timer image">{timer}</div>
+        <div className="timer image">{timeLeft}</div>
       </div>
       <div className="question-container">
         <div className="header">
@@ -123,9 +80,7 @@ const Questions = (props) => {
           ))}
         </div>
         <div>
-          <button
-            onClick={() => setNextQuestion(mainMenu[pageID].questions[count])}
-          >
+          <button onClick={() => setNextQuestion(mainMenu[pageID].questions)}>
             Submit
           </button>
         </div>
